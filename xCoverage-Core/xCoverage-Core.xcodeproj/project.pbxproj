@@ -12,6 +12,34 @@
 		C1EBE31C1C555D1D00A7364C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EBE31B1C555D1D00A7364C /* Assets.xcassets */; };
 		C1EBE31F1C555D1D00A7364C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EBE31D1C555D1D00A7364C /* MainMenu.xib */; };
 		C1EBE32A1C555D1E00A7364C /* xCoverage_CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE3291C555D1E00A7364C /* xCoverage_CoreTests.m */; };
+		C1EBE34C1C555D6C00A7364C /* libclang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE33E1C555D6C00A7364C /* libclang.dylib */; };
+		C1EBE34D1C555D6C00A7364C /* libLTO.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE33F1C555D6C00A7364C /* libLTO.dylib */; };
+		C1EBE34E1C555D6C00A7364C /* libswiftDemangle.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3401C555D6C00A7364C /* libswiftDemangle.dylib */; };
+		C1EBE3521C555D8500A7364C /* libclang.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE33E1C555D6C00A7364C /* libclang.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C1EBE3531C555D8500A7364C /* libLTO.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE33F1C555D6C00A7364C /* libLTO.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C1EBE3541C555D8500A7364C /* libswiftDemangle.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3401C555D6C00A7364C /* libswiftDemangle.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C1EBE3551C555D9700A7364C /* CoreProfileDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3351C555D6C00A7364C /* CoreProfileDT.framework */; };
+		C1EBE3561C555D9700A7364C /* CoreProfileDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3351C555D6C00A7364C /* CoreProfileDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3571C555D9700A7364C /* CoreSymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3361C555D6C00A7364C /* CoreSymbolicationDT.framework */; };
+		C1EBE3581C555D9700A7364C /* CoreSymbolicationDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3361C555D6C00A7364C /* CoreSymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3591C555D9700A7364C /* DTXConnectionServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3371C555D6C00A7364C /* DTXConnectionServices.framework */; };
+		C1EBE35A1C555D9700A7364C /* DTXConnectionServices.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3371C555D6C00A7364C /* DTXConnectionServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE35B1C555D9700A7364C /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3381C555D6C00A7364C /* DVTFoundation.framework */; };
+		C1EBE35C1C555D9700A7364C /* DVTFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3381C555D6C00A7364C /* DVTFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE35D1C555D9700A7364C /* DVTInstrumentsFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3391C555D6C00A7364C /* DVTInstrumentsFoundation.framework */; };
+		C1EBE35E1C555D9700A7364C /* DVTInstrumentsFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3391C555D6C00A7364C /* DVTInstrumentsFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE35F1C555D9700A7364C /* DVTInstrumentsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE33A1C555D6C00A7364C /* DVTInstrumentsUtilities.framework */; };
+		C1EBE3601C555D9700A7364C /* DVTInstrumentsUtilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE33A1C555D6C00A7364C /* DVTInstrumentsUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3611C555D9700A7364C /* DVTSourceControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE33B1C555D6C00A7364C /* DVTSourceControl.framework */; };
+		C1EBE3621C555D9700A7364C /* DVTSourceControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE33B1C555D6C00A7364C /* DVTSourceControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3631C555D9700A7364C /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE33C1C555D6C00A7364C /* IDEFoundation.framework */; };
+		C1EBE3641C555D9700A7364C /* IDEFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE33C1C555D6C00A7364C /* IDEFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3651C555D9700A7364C /* kperfdataDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE33D1C555D6C00A7364C /* kperfdataDT.framework */; };
+		C1EBE3661C555D9700A7364C /* kperfdataDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE33D1C555D6C00A7364C /* kperfdataDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3671C555D9700A7364C /* SymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3411C555D6C00A7364C /* SymbolicationDT.framework */; };
+		C1EBE3681C555D9700A7364C /* SymbolicationDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3411C555D6C00A7364C /* SymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1EBE3691C555D9700A7364C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3421C555D6C00A7364C /* XCTest.framework */; };
+		C1EBE36A1C555D9700A7364C /* XCTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3421C555D6C00A7364C /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +52,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C1EBE3511C555D7C00A7364C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C1EBE3521C555D8500A7364C /* libclang.dylib in CopyFiles */,
+				C1EBE36A1C555D9700A7364C /* XCTest.framework in CopyFiles */,
+				C1EBE3561C555D9700A7364C /* CoreProfileDT.framework in CopyFiles */,
+				C1EBE3621C555D9700A7364C /* DVTSourceControl.framework in CopyFiles */,
+				C1EBE3661C555D9700A7364C /* kperfdataDT.framework in CopyFiles */,
+				C1EBE3581C555D9700A7364C /* CoreSymbolicationDT.framework in CopyFiles */,
+				C1EBE35E1C555D9700A7364C /* DVTInstrumentsFoundation.framework in CopyFiles */,
+				C1EBE3531C555D8500A7364C /* libLTO.dylib in CopyFiles */,
+				C1EBE3641C555D9700A7364C /* IDEFoundation.framework in CopyFiles */,
+				C1EBE3601C555D9700A7364C /* DVTInstrumentsUtilities.framework in CopyFiles */,
+				C1EBE3541C555D8500A7364C /* libswiftDemangle.dylib in CopyFiles */,
+				C1EBE3681C555D9700A7364C /* SymbolicationDT.framework in CopyFiles */,
+				C1EBE35A1C555D9700A7364C /* DTXConnectionServices.framework in CopyFiles */,
+				C1EBE35C1C555D9700A7364C /* DVTFoundation.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C1EBE3121C555D1D00A7364C /* xCoverage-Core.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xCoverage-Core.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EBE3151C555D1D00A7364C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +89,20 @@
 		C1EBE3251C555D1E00A7364C /* xCoverage-CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xCoverage-CoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EBE3291C555D1E00A7364C /* xCoverage_CoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xCoverage_CoreTests.m; sourceTree = "<group>"; };
 		C1EBE32B1C555D1E00A7364C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EBE3351C555D6C00A7364C /* CoreProfileDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreProfileDT.framework; sourceTree = "<group>"; };
+		C1EBE3361C555D6C00A7364C /* CoreSymbolicationDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreSymbolicationDT.framework; sourceTree = "<group>"; };
+		C1EBE3371C555D6C00A7364C /* DTXConnectionServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTXConnectionServices.framework; sourceTree = "<group>"; };
+		C1EBE3381C555D6C00A7364C /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTFoundation.framework; sourceTree = "<group>"; };
+		C1EBE3391C555D6C00A7364C /* DVTInstrumentsFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTInstrumentsFoundation.framework; sourceTree = "<group>"; };
+		C1EBE33A1C555D6C00A7364C /* DVTInstrumentsUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTInstrumentsUtilities.framework; sourceTree = "<group>"; };
+		C1EBE33B1C555D6C00A7364C /* DVTSourceControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTSourceControl.framework; sourceTree = "<group>"; };
+		C1EBE33C1C555D6C00A7364C /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDEFoundation.framework; sourceTree = "<group>"; };
+		C1EBE33D1C555D6C00A7364C /* kperfdataDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kperfdataDT.framework; sourceTree = "<group>"; };
+		C1EBE33E1C555D6C00A7364C /* libclang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libclang.dylib; sourceTree = "<group>"; };
+		C1EBE33F1C555D6C00A7364C /* libLTO.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLTO.dylib; sourceTree = "<group>"; };
+		C1EBE3401C555D6C00A7364C /* libswiftDemangle.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftDemangle.dylib; sourceTree = "<group>"; };
+		C1EBE3411C555D6C00A7364C /* SymbolicationDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SymbolicationDT.framework; sourceTree = "<group>"; };
+		C1EBE3421C555D6C00A7364C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCTest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +110,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EBE34C1C555D6C00A7364C /* libclang.dylib in Frameworks */,
+				C1EBE3691C555D9700A7364C /* XCTest.framework in Frameworks */,
+				C1EBE3551C555D9700A7364C /* CoreProfileDT.framework in Frameworks */,
+				C1EBE3611C555D9700A7364C /* DVTSourceControl.framework in Frameworks */,
+				C1EBE3651C555D9700A7364C /* kperfdataDT.framework in Frameworks */,
+				C1EBE3571C555D9700A7364C /* CoreSymbolicationDT.framework in Frameworks */,
+				C1EBE35D1C555D9700A7364C /* DVTInstrumentsFoundation.framework in Frameworks */,
+				C1EBE34E1C555D6C00A7364C /* libswiftDemangle.dylib in Frameworks */,
+				C1EBE3631C555D9700A7364C /* IDEFoundation.framework in Frameworks */,
+				C1EBE35F1C555D9700A7364C /* DVTInstrumentsUtilities.framework in Frameworks */,
+				C1EBE34D1C555D6C00A7364C /* libLTO.dylib in Frameworks */,
+				C1EBE3671C555D9700A7364C /* SymbolicationDT.framework in Frameworks */,
+				C1EBE3591C555D9700A7364C /* DTXConnectionServices.framework in Frameworks */,
+				C1EBE35B1C555D9700A7364C /* DVTFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +140,7 @@
 		C1EBE3091C555D1D00A7364C = {
 			isa = PBXGroup;
 			children = (
+				C1EBE3341C555D4F00A7364C /* Frameworks */,
 				C1EBE3141C555D1D00A7364C /* xCoverage-Core */,
 				C1EBE3281C555D1E00A7364C /* xCoverage-CoreTests */,
 				C1EBE3131C555D1D00A7364C /* Products */,
@@ -103,6 +186,27 @@
 			path = "xCoverage-CoreTests";
 			sourceTree = "<group>";
 		};
+		C1EBE3341C555D4F00A7364C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1EBE3351C555D6C00A7364C /* CoreProfileDT.framework */,
+				C1EBE3361C555D6C00A7364C /* CoreSymbolicationDT.framework */,
+				C1EBE3371C555D6C00A7364C /* DTXConnectionServices.framework */,
+				C1EBE3381C555D6C00A7364C /* DVTFoundation.framework */,
+				C1EBE3391C555D6C00A7364C /* DVTInstrumentsFoundation.framework */,
+				C1EBE33A1C555D6C00A7364C /* DVTInstrumentsUtilities.framework */,
+				C1EBE33B1C555D6C00A7364C /* DVTSourceControl.framework */,
+				C1EBE33C1C555D6C00A7364C /* IDEFoundation.framework */,
+				C1EBE33D1C555D6C00A7364C /* kperfdataDT.framework */,
+				C1EBE33E1C555D6C00A7364C /* libclang.dylib */,
+				C1EBE33F1C555D6C00A7364C /* libLTO.dylib */,
+				C1EBE3401C555D6C00A7364C /* libswiftDemangle.dylib */,
+				C1EBE3411C555D6C00A7364C /* SymbolicationDT.framework */,
+				C1EBE3421C555D6C00A7364C /* XCTest.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +217,7 @@
 				C1EBE30E1C555D1D00A7364C /* Sources */,
 				C1EBE30F1C555D1D00A7364C /* Frameworks */,
 				C1EBE3101C555D1D00A7364C /* Resources */,
+				C1EBE3511C555D7C00A7364C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -321,8 +426,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "xCoverage-Core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakioStudio.xCoverage-Core";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -333,8 +446,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "xCoverage-Core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakioStudio.xCoverage-Core";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -385,6 +506,7 @@
 				C1EBE3301C555D1E00A7364C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1EBE3311C555D1E00A7364C /* Build configuration list for PBXNativeTarget "xCoverage-CoreTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +515,7 @@
 				C1EBE3331C555D1E00A7364C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

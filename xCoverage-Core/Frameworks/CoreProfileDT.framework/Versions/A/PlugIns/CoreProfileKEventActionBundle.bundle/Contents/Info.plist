@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>15A283</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CoreProfileKEventActionBundle</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.bundle.CoreProfileKEventActionBundle</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CoreProfileKEventActionBundle</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>59003</string>
+	<key>CPActionArchitectures</key>
+	<array>
+		<string>i386</string>
+		<string>ppc</string>
+		<string>x86_64</string>
+	</array>
+	<key>CPActionDescription</key>
+	<string>Records the current KDebug event and its arguments.  This action can only be used with KDebug Triggers.</string>
+	<key>CPActionName</key>
+	<string>KDebug Event</string>
+	<key>CPActionUUID</key>
+	<string>EBBAAF4B-E1AD-4460-9D3C-894636D961F2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string></string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>15A284</string>
+	<key>DTSDKName</key>
+	<string>macosx10.11internal</string>
+	<key>DTXcode</key>
+	<string>0720</string>
+	<key>DTXcodeBuild</key>
+	<string></string>
+</dict>
+</plist>

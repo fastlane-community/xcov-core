@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>15A283</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CoreProfileThreadInfoActionBundle</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.bundle.CoreProfileThreadInfoActionBundle</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CoreProfileThreadInfoActionBundle</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>59003</string>
+	<key>CPActionArchitectures</key>
+	<array>
+		<string>i386</string>
+		<string>ppc</string>
+		<string>x86_64</string>
+	</array>
+	<key>CPActionDescription</key>
+	<string>Records the PID and thread of the target thread(s).</string>
+	<key>CPActionName</key>
+	<string>Thread Info</string>
+	<key>CPActionProperties</key>
+	<dict>
+		<key>recordProcessNames</key>
+		<dict>
+			<key>Description</key>
+			<string>Determines whether or not the action records process names at sampling time (as opposed to defering collection of names until processing of data from the kernel).  Enabling this ensures that any and all processes, which exit between being sampled and the sample data being returned by the kernel, will still be named.</string>
+			<key>Name</key>
+			<string>Record Process Names</string>
+			<key>Type</key>
+			<array>
+				<string>CFBoolean</string>
+				<string>CFNumber</string>
+			</array>
+		</dict>
+	</dict>
+	<key>CPActionUUID</key>
+	<string>E60C6B6D-5843-45A3-88DD-313D70665F3D</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string></string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>15A284</string>
+	<key>DTSDKName</key>
+	<string>macosx10.11internal</string>
+	<key>DTXcode</key>
+	<string>0720</string>
+	<key>DTXcodeBuild</key>
+	<string></string>
+</dict>
+</plist>
