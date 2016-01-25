@@ -5,8 +5,12 @@
 
 #import <Foundation/Foundation.h>
 #import "DDCommandLineInterface.h"
-#import "Middleware.h"
 
-int main(int argc, const char * argv[]) {
-    return DDCliAppRunWithClass([Middleware class]);
+@interface Middleware : NSObject <DDCliApplicationDelegate> {
+    NSString * _source;
+    NSString * _output;
+    BOOL _version;
+    BOOL _help;
 }
+
+@end

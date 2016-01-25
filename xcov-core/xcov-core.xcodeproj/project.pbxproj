@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072F06D51C5639E9004DAE1A /* DDCliApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06CD1C5639E9004DAE1A /* DDCliApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06CF1C5639E9004DAE1A /* DDCliParseException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D11C5639E9004DAE1A /* DDCliUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072F06DB1C563A28004DAE1A /* Middleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06DA1C563A28004DAE1A /* Middleware.m */; };
 		C1E617EB1C5631D900FB32CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617EA1C5631D900FB32CE /* main.m */; };
 		C1E618001C5631F700FB32CE /* IDESchemeActionCodeCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F31C5631F700FB32CE /* IDESchemeActionCodeCoverage.m */; };
 		C1E618011C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F51C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m */; };
@@ -34,6 +39,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		072F06CC1C5639E9004DAE1A /* DDCliApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCliApplication.h; sourceTree = "<group>"; };
+		072F06CD1C5639E9004DAE1A /* DDCliApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCliApplication.m; sourceTree = "<group>"; };
+		072F06CE1C5639E9004DAE1A /* DDCliParseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCliParseException.h; sourceTree = "<group>"; };
+		072F06CF1C5639E9004DAE1A /* DDCliParseException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCliParseException.m; sourceTree = "<group>"; };
+		072F06D01C5639E9004DAE1A /* DDCliUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCliUtil.h; sourceTree = "<group>"; };
+		072F06D11C5639E9004DAE1A /* DDCliUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCliUtil.m; sourceTree = "<group>"; };
+		072F06D21C5639E9004DAE1A /* DDCommandLineInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCommandLineInterface.h; sourceTree = "<group>"; };
+		072F06D31C5639E9004DAE1A /* DDGetoptLongParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGetoptLongParser.h; sourceTree = "<group>"; };
+		072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGetoptLongParser.m; sourceTree = "<group>"; };
+		072F06D91C563A28004DAE1A /* Middleware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Middleware.h; sourceTree = "<group>"; };
+		072F06DA1C563A28004DAE1A /* Middleware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Middleware.m; sourceTree = "<group>"; };
 		C1E617E71C5631D800FB32CE /* xcov-core */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "xcov-core"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E617EA1C5631D900FB32CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1E617F21C5631F700FB32CE /* IDESchemeActionCodeCoverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverage.h; sourceTree = "<group>"; };
@@ -71,6 +87,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072F06CA1C5639C0004DAE1A /* 3rd Parties */ = {
+			isa = PBXGroup;
+			children = (
+				072F06CB1C5639D5004DAE1A /* ddcli */,
+			);
+			name = "3rd Parties";
+			path = "Third Parties";
+			sourceTree = "<group>";
+		};
+		072F06CB1C5639D5004DAE1A /* ddcli */ = {
+			isa = PBXGroup;
+			children = (
+				072F06CC1C5639E9004DAE1A /* DDCliApplication.h */,
+				072F06CD1C5639E9004DAE1A /* DDCliApplication.m */,
+				072F06CE1C5639E9004DAE1A /* DDCliParseException.h */,
+				072F06CF1C5639E9004DAE1A /* DDCliParseException.m */,
+				072F06D01C5639E9004DAE1A /* DDCliUtil.h */,
+				072F06D11C5639E9004DAE1A /* DDCliUtil.m */,
+				072F06D21C5639E9004DAE1A /* DDCommandLineInterface.h */,
+				072F06D31C5639E9004DAE1A /* DDGetoptLongParser.h */,
+				072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */,
+			);
+			path = ddcli;
+			sourceTree = "<group>";
+		};
 		C1E617DE1C5631D800FB32CE = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +135,9 @@
 				C1E617F11C5631E400FB32CE /* IDE */,
 				C1E6180B1C56325800FB32CE /* Core */,
 				C1E617EA1C5631D900FB32CE /* main.m */,
+				072F06D91C563A28004DAE1A /* Middleware.h */,
+				072F06DA1C563A28004DAE1A /* Middleware.m */,
+				072F06CA1C5639C0004DAE1A /* 3rd Parties */,
 			);
 			path = "xcov-core";
 			sourceTree = "<group>";
@@ -197,17 +241,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072F06DB1C563A28004DAE1A /* Middleware.m in Sources */,
 				C1E618121C56326900FB32CE /* Core.m in Sources */,
 				C1E618031C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m in Sources */,
 				C1E618021C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m in Sources */,
 				C1E6180A1C56323F00FB32CE /* NSDictionary+Report.m in Sources */,
 				C1E618141C56326900FB32CE /* Writer.m in Sources */,
 				C1E618131C56326900FB32CE /* Reader.m in Sources */,
+				072F06D51C5639E9004DAE1A /* DDCliApplication.m in Sources */,
+				072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */,
 				C1E618061C5631F700FB32CE /* DVTSourceCodeSymbolKind.m in Sources */,
 				C1E618011C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m in Sources */,
 				C1E618001C5631F700FB32CE /* IDESchemeActionCodeCoverage.m in Sources */,
+				072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */,
 				C1E618051C5631F700FB32CE /* DVTCoverageDataContainer.m in Sources */,
 				C1E617EB1C5631D900FB32CE /* main.m in Sources */,
+				072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */,
 				C1E618041C5631F700FB32CE /* DVTSourceFileLineCoverageData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +376,7 @@
 				C1E617F01C5631D900FB32CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

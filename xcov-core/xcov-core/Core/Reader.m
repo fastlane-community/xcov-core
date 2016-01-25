@@ -5,6 +5,7 @@
 
 #import "IDESchemeActionCodeCoverage.h"
 
+#import "DDCliUtil.h"
 #import "NSDictionary+Report.h"
 #import "Reader.h"
 
@@ -32,12 +33,14 @@
 
 - (NSDictionary *)read {
     if ([self _isValidPath] == NO) {
-        exit(1);
+        ddprintf(@"The source path provided is not correct\n");
+        exit(66);
     }
     
     IDESchemeActionCodeCoverage *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.path];
     if (coverage == nil) {
-        exit(1);
+        ddprintf(@"Unable to read .xccoverage file\n");
+        exit(65);
     }
         
     NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage];

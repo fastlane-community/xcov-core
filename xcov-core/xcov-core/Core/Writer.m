@@ -5,6 +5,8 @@
 
 #import "Writer.h"
 
+#import "DDCliUtil.h"
+
 @interface Writer()
 
 @property (nonatomic, copy, readonly) NSString *path;
@@ -29,7 +31,8 @@
 
 - (void)writeReport:(NSDictionary*)report {
     if ([self _isValidPath] == NO) {
-        exit(1);
+        ddprintf(@"The output path provided is not correct\n");
+        exit(73);
     }
     
     if ([NSJSONSerialization isValidJSONObject:report]) {
@@ -37,12 +40,12 @@
         NSData *data = [NSJSONSerialization dataWithJSONObject:report options:0 error:&error];
         if (error == nil && data != nil) {
             [data writeToFile:self.path atomically:YES];
-            NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+            ddprintf(@"Coverage report successfully created at path: %@\n", self.path);
             return;
         }
     }
     
-    exit(1);
+    exit(73);
 }
 
 #pragma mark - Private methods
