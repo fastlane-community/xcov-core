@@ -12,38 +12,17 @@
 		C1EBE31C1C555D1D00A7364C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EBE31B1C555D1D00A7364C /* Assets.xcassets */; };
 		C1EBE31F1C555D1D00A7364C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EBE31D1C555D1D00A7364C /* MainMenu.xib */; };
 		C1EBE32A1C555D1E00A7364C /* xCoverage_CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE3291C555D1E00A7364C /* xCoverage_CoreTests.m */; };
-		C1EBE3991C55609A00A7364C /* libclang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE38B1C55609A00A7364C /* libclang.dylib */; };
-		C1EBE39A1C55609A00A7364C /* libLTO.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE38C1C55609A00A7364C /* libLTO.dylib */; };
-		C1EBE39B1C55609A00A7364C /* libswiftDemangle.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE38D1C55609A00A7364C /* libswiftDemangle.dylib */; };
-		C1EBE3B41C5560E600A7364C /* libLTO.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE38C1C55609A00A7364C /* libLTO.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		C1EBE3B51C5560E600A7364C /* libclang.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE38B1C55609A00A7364C /* libclang.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		C1EBE3B61C5560E600A7364C /* libswiftDemangle.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE38D1C55609A00A7364C /* libswiftDemangle.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		C1EBE3B71C55614600A7364C /* CoreProfileDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3821C55609A00A7364C /* CoreProfileDT.framework */; };
-		C1EBE3B81C55614600A7364C /* CoreProfileDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3821C55609A00A7364C /* CoreProfileDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3B91C55614600A7364C /* CoreSymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3831C55609A00A7364C /* CoreSymbolicationDT.framework */; };
-		C1EBE3BA1C55614600A7364C /* CoreSymbolicationDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3831C55609A00A7364C /* CoreSymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3BB1C55614600A7364C /* DTXConnectionServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3841C55609A00A7364C /* DTXConnectionServices.framework */; };
-		C1EBE3BC1C55614600A7364C /* DTXConnectionServices.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3841C55609A00A7364C /* DTXConnectionServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3BD1C55614600A7364C /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3851C55609A00A7364C /* DVTFoundation.framework */; };
-		C1EBE3BE1C55614600A7364C /* DVTFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3851C55609A00A7364C /* DVTFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3BF1C55614600A7364C /* DVTInstrumentsFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3861C55609A00A7364C /* DVTInstrumentsFoundation.framework */; };
-		C1EBE3C01C55614600A7364C /* DVTInstrumentsFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3861C55609A00A7364C /* DVTInstrumentsFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3C11C55614600A7364C /* DVTInstrumentsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3871C55609A00A7364C /* DVTInstrumentsUtilities.framework */; };
-		C1EBE3C21C55614600A7364C /* DVTInstrumentsUtilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3871C55609A00A7364C /* DVTInstrumentsUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3C31C55614600A7364C /* DVTSourceControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3881C55609A00A7364C /* DVTSourceControl.framework */; };
-		C1EBE3C41C55614600A7364C /* DVTSourceControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3881C55609A00A7364C /* DVTSourceControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3C51C55614600A7364C /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE3891C55609A00A7364C /* IDEFoundation.framework */; };
-		C1EBE3C61C55614600A7364C /* IDEFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE3891C55609A00A7364C /* IDEFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3C71C55614600A7364C /* kperfdataDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE38A1C55609A00A7364C /* kperfdataDT.framework */; };
-		C1EBE3C81C55614600A7364C /* kperfdataDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE38A1C55609A00A7364C /* kperfdataDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3C91C55614600A7364C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE38F1C55609A00A7364C /* XCTest.framework */; };
-		C1EBE3CA1C55614600A7364C /* XCTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE38F1C55609A00A7364C /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1EBE3CB1C55614600A7364C /* SymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBE38E1C55609A00A7364C /* SymbolicationDT.framework */; };
-		C1EBE3CC1C55614600A7364C /* SymbolicationDT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1EBE38E1C55609A00A7364C /* SymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1EBE3CF1C55640100A7364C /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE3CE1C55640100A7364C /* Reader.m */; };
 		C1EBE3D41C55697200A7364C /* NSDictionary+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE3D31C55697200A7364C /* NSDictionary+Report.m */; };
 		C1EBE3D71C5584E000A7364C /* Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE3D61C5584E000A7364C /* Writer.m */; };
 		C1EBE3DA1C55873000A7364C /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE3D91C55873000A7364C /* Core.m */; };
+		C1EBE4681C56301300A7364C /* IDESchemeActionCodeCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE45B1C56301300A7364C /* IDESchemeActionCodeCoverage.m */; };
+		C1EBE4691C56301300A7364C /* IDESchemeActionCodeCoverageTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE45D1C56301300A7364C /* IDESchemeActionCodeCoverageTarget.m */; };
+		C1EBE46A1C56301300A7364C /* IDESchemeActionCodeCoverageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE45F1C56301300A7364C /* IDESchemeActionCodeCoverageFile.m */; };
+		C1EBE46B1C56301300A7364C /* IDESchemeActionCodeCoverageFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE4611C56301300A7364C /* IDESchemeActionCodeCoverageFunction.m */; };
+		C1EBE46C1C56301300A7364C /* DVTSourceFileLineCoverageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE4631C56301300A7364C /* DVTSourceFileLineCoverageData.m */; };
+		C1EBE46D1C56301300A7364C /* DVTCoverageDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE4651C56301300A7364C /* DVTCoverageDataContainer.m */; };
+		C1EBE46E1C56301300A7364C /* DVTSourceCodeSymbolKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBE4671C56301300A7364C /* DVTSourceCodeSymbolKind.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,20 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C1EBE3B41C5560E600A7364C /* libLTO.dylib in CopyFiles */,
-				C1EBE3B81C55614600A7364C /* CoreProfileDT.framework in CopyFiles */,
-				C1EBE3C41C55614600A7364C /* DVTSourceControl.framework in CopyFiles */,
-				C1EBE3C81C55614600A7364C /* kperfdataDT.framework in CopyFiles */,
-				C1EBE3CC1C55614600A7364C /* SymbolicationDT.framework in CopyFiles */,
-				C1EBE3BA1C55614600A7364C /* CoreSymbolicationDT.framework in CopyFiles */,
-				C1EBE3C01C55614600A7364C /* DVTInstrumentsFoundation.framework in CopyFiles */,
-				C1EBE3CA1C55614600A7364C /* XCTest.framework in CopyFiles */,
-				C1EBE3B51C5560E600A7364C /* libclang.dylib in CopyFiles */,
-				C1EBE3C61C55614600A7364C /* IDEFoundation.framework in CopyFiles */,
-				C1EBE3C21C55614600A7364C /* DVTInstrumentsUtilities.framework in CopyFiles */,
-				C1EBE3B61C5560E600A7364C /* libswiftDemangle.dylib in CopyFiles */,
-				C1EBE3BC1C55614600A7364C /* DTXConnectionServices.framework in CopyFiles */,
-				C1EBE3BE1C55614600A7364C /* DVTFoundation.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,20 +58,6 @@
 		C1EBE3251C555D1E00A7364C /* xCoverage-CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xCoverage-CoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EBE3291C555D1E00A7364C /* xCoverage_CoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xCoverage_CoreTests.m; sourceTree = "<group>"; };
 		C1EBE32B1C555D1E00A7364C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1EBE3821C55609A00A7364C /* CoreProfileDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreProfileDT.framework; sourceTree = "<group>"; };
-		C1EBE3831C55609A00A7364C /* CoreSymbolicationDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreSymbolicationDT.framework; sourceTree = "<group>"; };
-		C1EBE3841C55609A00A7364C /* DTXConnectionServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTXConnectionServices.framework; sourceTree = "<group>"; };
-		C1EBE3851C55609A00A7364C /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTFoundation.framework; sourceTree = "<group>"; };
-		C1EBE3861C55609A00A7364C /* DVTInstrumentsFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTInstrumentsFoundation.framework; sourceTree = "<group>"; };
-		C1EBE3871C55609A00A7364C /* DVTInstrumentsUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTInstrumentsUtilities.framework; sourceTree = "<group>"; };
-		C1EBE3881C55609A00A7364C /* DVTSourceControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVTSourceControl.framework; sourceTree = "<group>"; };
-		C1EBE3891C55609A00A7364C /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDEFoundation.framework; sourceTree = "<group>"; };
-		C1EBE38A1C55609A00A7364C /* kperfdataDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kperfdataDT.framework; sourceTree = "<group>"; };
-		C1EBE38B1C55609A00A7364C /* libclang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libclang.dylib; sourceTree = "<group>"; };
-		C1EBE38C1C55609A00A7364C /* libLTO.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLTO.dylib; sourceTree = "<group>"; };
-		C1EBE38D1C55609A00A7364C /* libswiftDemangle.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftDemangle.dylib; sourceTree = "<group>"; };
-		C1EBE38E1C55609A00A7364C /* SymbolicationDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SymbolicationDT.framework; sourceTree = "<group>"; };
-		C1EBE38F1C55609A00A7364C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCTest.framework; sourceTree = "<group>"; };
 		C1EBE3CD1C55640100A7364C /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reader.h; sourceTree = "<group>"; };
 		C1EBE3CE1C55640100A7364C /* Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reader.m; sourceTree = "<group>"; };
 		C1EBE3D21C55697200A7364C /* NSDictionary+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Report.h"; sourceTree = "<group>"; };
@@ -115,6 +66,20 @@
 		C1EBE3D61C5584E000A7364C /* Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Writer.m; sourceTree = "<group>"; };
 		C1EBE3D81C55873000A7364C /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C1EBE3D91C55873000A7364C /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		C1EBE45A1C56301300A7364C /* IDESchemeActionCodeCoverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverage.h; sourceTree = "<group>"; };
+		C1EBE45B1C56301300A7364C /* IDESchemeActionCodeCoverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverage.m; sourceTree = "<group>"; };
+		C1EBE45C1C56301300A7364C /* IDESchemeActionCodeCoverageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverageTarget.h; sourceTree = "<group>"; };
+		C1EBE45D1C56301300A7364C /* IDESchemeActionCodeCoverageTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverageTarget.m; sourceTree = "<group>"; };
+		C1EBE45E1C56301300A7364C /* IDESchemeActionCodeCoverageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverageFile.h; sourceTree = "<group>"; };
+		C1EBE45F1C56301300A7364C /* IDESchemeActionCodeCoverageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverageFile.m; sourceTree = "<group>"; };
+		C1EBE4601C56301300A7364C /* IDESchemeActionCodeCoverageFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverageFunction.h; sourceTree = "<group>"; };
+		C1EBE4611C56301300A7364C /* IDESchemeActionCodeCoverageFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverageFunction.m; sourceTree = "<group>"; };
+		C1EBE4621C56301300A7364C /* DVTSourceFileLineCoverageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileLineCoverageData.h; sourceTree = "<group>"; };
+		C1EBE4631C56301300A7364C /* DVTSourceFileLineCoverageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileLineCoverageData.m; sourceTree = "<group>"; };
+		C1EBE4641C56301300A7364C /* DVTCoverageDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCoverageDataContainer.h; sourceTree = "<group>"; };
+		C1EBE4651C56301300A7364C /* DVTCoverageDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTCoverageDataContainer.m; sourceTree = "<group>"; };
+		C1EBE4661C56301300A7364C /* DVTSourceCodeSymbolKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeSymbolKind.h; sourceTree = "<group>"; };
+		C1EBE4671C56301300A7364C /* DVTSourceCodeSymbolKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceCodeSymbolKind.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,20 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1EBE3991C55609A00A7364C /* libclang.dylib in Frameworks */,
-				C1EBE3B71C55614600A7364C /* CoreProfileDT.framework in Frameworks */,
-				C1EBE3C31C55614600A7364C /* DVTSourceControl.framework in Frameworks */,
-				C1EBE3C71C55614600A7364C /* kperfdataDT.framework in Frameworks */,
-				C1EBE3CB1C55614600A7364C /* SymbolicationDT.framework in Frameworks */,
-				C1EBE3B91C55614600A7364C /* CoreSymbolicationDT.framework in Frameworks */,
-				C1EBE3BF1C55614600A7364C /* DVTInstrumentsFoundation.framework in Frameworks */,
-				C1EBE3C91C55614600A7364C /* XCTest.framework in Frameworks */,
-				C1EBE39B1C55609A00A7364C /* libswiftDemangle.dylib in Frameworks */,
-				C1EBE3C51C55614600A7364C /* IDEFoundation.framework in Frameworks */,
-				C1EBE3C11C55614600A7364C /* DVTInstrumentsUtilities.framework in Frameworks */,
-				C1EBE39A1C55609A00A7364C /* libLTO.dylib in Frameworks */,
-				C1EBE3BB1C55614600A7364C /* DTXConnectionServices.framework in Frameworks */,
-				C1EBE3BD1C55614600A7364C /* DVTFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +106,6 @@
 				C1EBE3141C555D1D00A7364C /* xCoverage-Core */,
 				C1EBE3281C555D1E00A7364C /* xCoverage-CoreTests */,
 				C1EBE3131C555D1D00A7364C /* Products */,
-				C1EBE3D01C55640F00A7364C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +121,7 @@
 		C1EBE3141C555D1D00A7364C /* xCoverage-Core */ = {
 			isa = PBXGroup;
 			children = (
+				C1EBE4591C562FF600A7364C /* Unarchive */,
 				C1EBE3D21C55697200A7364C /* NSDictionary+Report.h */,
 				C1EBE3D31C55697200A7364C /* NSDictionary+Report.m */,
 				C1EBE3D81C55873000A7364C /* Core.h */,
@@ -204,27 +155,6 @@
 			path = "xCoverage-CoreTests";
 			sourceTree = "<group>";
 		};
-		C1EBE3D01C55640F00A7364C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C1EBE3821C55609A00A7364C /* CoreProfileDT.framework */,
-				C1EBE3831C55609A00A7364C /* CoreSymbolicationDT.framework */,
-				C1EBE3841C55609A00A7364C /* DTXConnectionServices.framework */,
-				C1EBE3851C55609A00A7364C /* DVTFoundation.framework */,
-				C1EBE3861C55609A00A7364C /* DVTInstrumentsFoundation.framework */,
-				C1EBE3871C55609A00A7364C /* DVTInstrumentsUtilities.framework */,
-				C1EBE3881C55609A00A7364C /* DVTSourceControl.framework */,
-				C1EBE3891C55609A00A7364C /* IDEFoundation.framework */,
-				C1EBE38A1C55609A00A7364C /* kperfdataDT.framework */,
-				C1EBE38F1C55609A00A7364C /* XCTest.framework */,
-				C1EBE38E1C55609A00A7364C /* SymbolicationDT.framework */,
-				C1EBE38C1C55609A00A7364C /* libLTO.dylib */,
-				C1EBE38B1C55609A00A7364C /* libclang.dylib */,
-				C1EBE38D1C55609A00A7364C /* libswiftDemangle.dylib */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C1EBE3D11C55643900A7364C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +163,27 @@
 				C1EBE3201C555D1D00A7364C /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		C1EBE4591C562FF600A7364C /* Unarchive */ = {
+			isa = PBXGroup;
+			children = (
+				C1EBE45A1C56301300A7364C /* IDESchemeActionCodeCoverage.h */,
+				C1EBE45B1C56301300A7364C /* IDESchemeActionCodeCoverage.m */,
+				C1EBE45C1C56301300A7364C /* IDESchemeActionCodeCoverageTarget.h */,
+				C1EBE45D1C56301300A7364C /* IDESchemeActionCodeCoverageTarget.m */,
+				C1EBE45E1C56301300A7364C /* IDESchemeActionCodeCoverageFile.h */,
+				C1EBE45F1C56301300A7364C /* IDESchemeActionCodeCoverageFile.m */,
+				C1EBE4601C56301300A7364C /* IDESchemeActionCodeCoverageFunction.h */,
+				C1EBE4611C56301300A7364C /* IDESchemeActionCodeCoverageFunction.m */,
+				C1EBE4621C56301300A7364C /* DVTSourceFileLineCoverageData.h */,
+				C1EBE4631C56301300A7364C /* DVTSourceFileLineCoverageData.m */,
+				C1EBE4641C56301300A7364C /* DVTCoverageDataContainer.h */,
+				C1EBE4651C56301300A7364C /* DVTCoverageDataContainer.m */,
+				C1EBE4661C56301300A7364C /* DVTSourceCodeSymbolKind.h */,
+				C1EBE4671C56301300A7364C /* DVTSourceCodeSymbolKind.m */,
+			);
+			path = Unarchive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,12 +286,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EBE46B1C56301300A7364C /* IDESchemeActionCodeCoverageFunction.m in Sources */,
+				C1EBE46E1C56301300A7364C /* DVTSourceCodeSymbolKind.m in Sources */,
 				C1EBE31A1C555D1D00A7364C /* main.m in Sources */,
+				C1EBE4691C56301300A7364C /* IDESchemeActionCodeCoverageTarget.m in Sources */,
 				C1EBE3CF1C55640100A7364C /* Reader.m in Sources */,
+				C1EBE46D1C56301300A7364C /* DVTCoverageDataContainer.m in Sources */,
 				C1EBE3DA1C55873000A7364C /* Core.m in Sources */,
 				C1EBE3D41C55697200A7364C /* NSDictionary+Report.m in Sources */,
+				C1EBE46A1C56301300A7364C /* IDESchemeActionCodeCoverageFile.m in Sources */,
 				C1EBE3171C555D1D00A7364C /* AppDelegate.m in Sources */,
+				C1EBE46C1C56301300A7364C /* DVTSourceFileLineCoverageData.m in Sources */,
 				C1EBE3D71C5584E000A7364C /* Writer.m in Sources */,
+				C1EBE4681C56301300A7364C /* IDESchemeActionCodeCoverage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

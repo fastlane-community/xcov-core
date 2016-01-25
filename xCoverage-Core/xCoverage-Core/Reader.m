@@ -3,7 +3,7 @@
 //  Copyright © 2016 nakioStudio. All rights reserved.
 //
 
-#import <IDEFoundation/IDESchemeActionCodeCoverage.h>
+#import "IDESchemeActionCodeCoverage.h"
 
 #import "NSDictionary+Report.h"
 #import "Reader.h"
