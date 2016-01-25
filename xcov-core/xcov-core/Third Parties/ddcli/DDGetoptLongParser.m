@@ -169,7 +169,7 @@
 - (NSArray *) parseOptionsWithArguments: (NSArray *) arguments
                                 command: (NSString *) command;
 {
-    int argc = [arguments count];
+    NSUInteger argc = [arguments count];
     char ** argv = alloca(sizeof(char *) * argc);
     int i;
     for (i = 0; i < argc; i++)
@@ -192,7 +192,7 @@
     opterr = 1;
     
     int longOptionIndex = -1;
-    while ((ch = mGetoptFunction(argc, argv, optionString, options, &longOptionIndex)) != -1)
+    while ((ch = mGetoptFunction((int)argc, argv, optionString, options, &longOptionIndex)) != -1)
     {
         NSString * last_argv = [NSString stringWithUTF8String: argv[optind-1]];
         if (ch == ':')
