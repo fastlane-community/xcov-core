@@ -35,10 +35,13 @@
         exit(73);
     }
     
+    ddprintf(@"Serializing coverage report...\n");
     if ([NSJSONSerialization isValidJSONObject:report]) {
         NSError *error;
         NSData *data = [NSJSONSerialization dataWithJSONObject:report options:0 error:&error];
         if (error == nil && data != nil) {
+            ddprintf(@"Report successfully serialized\n");
+            ddprintf(@"Writing report on disk...\n");
             [data writeToFile:self.path atomically:YES];
             ddprintf(@"Coverage report successfully created at path: %@\n", self.path);
             return;

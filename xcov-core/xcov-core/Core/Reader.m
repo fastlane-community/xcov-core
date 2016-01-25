@@ -37,13 +37,20 @@
         exit(66);
     }
     
+    ddprintf(@"Opening .xccoverage file at path: %@\n", self.path);
     IDESchemeActionCodeCoverage *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.path];
     if (coverage == nil) {
         ddprintf(@"Unable to read .xccoverage file\n");
         exit(65);
     }
-        
+    
+    ddprintf(@"Parsing .xccoverage file...\n");
     NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage];
+    if (report == nil) {
+        ddprintf(@"Unable to parse .xccoverage file\n");
+        exit(65);
+    }
+    ddprintf(@"File successfully parsed\n");
     return report;
 }
 

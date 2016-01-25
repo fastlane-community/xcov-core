@@ -7,13 +7,16 @@
 #import "DDCliApplication.h"
 #import "Core.h"
 
-NSString *const MiddlewareAppVersion = @"0.1";
+NSString *const MiddlewareAppVersion    = @"0.1";
+NSString *const MiddlewareAppName       = @"xCov-Core";
 
 @implementation Middleware
 
 #pragma mark - DDCliApplicationDelegate methods
 
 - (int)application:(DDCliApplication *)app runWithArguments: (NSArray *)arguments {
+    
+    ddprintf(@"------ %@ ------\n", MiddlewareAppName);
     
     if (_help) {
         [self _printHelp];
@@ -65,11 +68,11 @@ NSString *const MiddlewareAppVersion = @"0.1";
              @"  -v  --version                 Display version\n"
              @"  -h, --help                    Display this help\n"
              @"\n"
-             @"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", DDCliApp, MiddlewareAppVersion);
+             @"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
 }
 
 - (void)_printVersion {
-    ddprintf(@"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", DDCliApp, MiddlewareAppVersion);
+    ddprintf(@"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
 }
 
 @end
