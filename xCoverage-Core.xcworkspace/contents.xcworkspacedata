@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:xcov-core/xcov-core.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:xCoverage-Core/xCoverage-Core.xcodeproj">
    </FileRef>
 </Workspace>
