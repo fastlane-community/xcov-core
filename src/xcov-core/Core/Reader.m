@@ -11,18 +11,18 @@
 
 @interface Reader()
 
-@property (nonatomic, copy, readonly) NSString *path;
+@property (nonatomic, assign, readonly) CoreOptions options;
 @property (nonatomic, strong, readonly) NSFileManager *fileManager;
 
 @end
 
 @implementation Reader
 
-- (instancetype)initWithPath:(NSString*)path {
+- (instancetype)initWithOptions:(CoreOptions)options {
     self = [super init];
     
     if (self != nil) {
-        self->_path = path;
+        self->_options = options;
         self->_fileManager = [NSFileManager defaultManager];
     }
     
@@ -37,15 +37,16 @@
         exit(66);
     }
     
-    ddprintf(@"Opening .xccoverage file at path: %@\n", self.path);
-    IDESchemeActionCodeCoverage *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.path];
+    ddprintf(@"Opening .xccoverage file at path: %@\n", self.options.source);
+    IDESchemeActionCodeCoverage *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.options.source];
     if (coverage == nil) {
         ddprintf(@"Unable to read .xccoverage file\n");
         exit(65);
     }
     
+    ddprintf(@"Add file location? %@\n", self.options.addLocation ? @"yes" : @"no");
     ddprintf(@"Parsing .xccoverage file...\n");
-    NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage];
+    NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage addingLocation:self.options.addLocation];
     if (report == nil) {
         ddprintf(@"Unable to parse .xccoverage file\n");
         exit(65);
@@ -58,7 +59,7 @@
 
 - (BOOL)_isValidPath {
     BOOL isDirectory;
-    if ([self.fileManager fileExistsAtPath:self.path isDirectory:&isDirectory]) {
+    if ([self.fileManager fileExistsAtPath:self.options.source isDirectory:&isDirectory]) {
         if (isDirectory) {
             return NO;
         }

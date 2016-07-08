@@ -50,6 +50,7 @@
 		072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGetoptLongParser.m; sourceTree = "<group>"; };
 		072F06D91C563A28004DAE1A /* Middleware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Middleware.h; sourceTree = "<group>"; };
 		072F06DA1C563A28004DAE1A /* Middleware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Middleware.m; sourceTree = "<group>"; };
+		C1234B151D303B96004AB3A1 /* CoreOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreOptions.h; sourceTree = "<group>"; };
 		C1E617E71C5631D800FB32CE /* xcov-core */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "xcov-core"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E617EA1C5631D900FB32CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1E617F21C5631F700FB32CE /* IDESchemeActionCodeCoverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverage.h; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 		C1E6180B1C56325800FB32CE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C1234B151D303B96004AB3A1 /* CoreOptions.h */,
 				C1E6180C1C56326900FB32CE /* Core.h */,
 				C1E6180D1C56326900FB32CE /* Core.m */,
 				C1E6180E1C56326900FB32CE /* Reader.h */,

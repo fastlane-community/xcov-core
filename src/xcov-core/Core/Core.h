@@ -4,10 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreOptions.h"
 
 @interface Core : NSObject
 
-- (instancetype)initWithSourcePath:(NSString*)sourcePath targetPath:(NSString*)targetPath;
+- (instancetype)initWithOptions:(CoreOptions)options;
 - (void)run;
 
 @end

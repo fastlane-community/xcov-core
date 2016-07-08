@@ -4,10 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreOptions.h"
 
 @interface Writer : NSObject
 
-- (instancetype)initWithPath:(NSString*)path;
+- (instancetype)initWithOptions:(CoreOptions)options;
 - (void)writeReport:(NSDictionary*)report;
 
 @end

@@ -13,11 +13,11 @@
 
 @implementation NSDictionary (Report)
 
-+ (NSDictionary*)dictionaryFromCodeCoverage:(IDESchemeActionCodeCoverage *)codeCoverage {
++ (NSDictionary*)dictionaryFromCodeCoverage:(IDESchemeActionCodeCoverage *)codeCoverage addingLocation:(BOOL)addLocation {
     NSMutableArray *targets = [NSMutableArray array];
     
     for (IDESchemeActionCodeCoverageTarget *target in codeCoverage.codeCoverageTargets) {
-        [targets addObject:[NSDictionary _dictionaryFromCodeCoverageTarget:target]];
+        [targets addObject:[NSDictionary _dictionaryFromCodeCoverageTarget:target addingLocation:addLocation]];
     }
     
     NSDictionary *dictionary = @{@"targets":targets};
@@ -27,11 +27,11 @@
 
 #pragma mark - Private class methods
 
-+ (NSDictionary*)_dictionaryFromCodeCoverageTarget:(IDESchemeActionCodeCoverageTarget *)target {
++ (NSDictionary*)_dictionaryFromCodeCoverageTarget:(IDESchemeActionCodeCoverageTarget *)target addingLocation:(BOOL)addLocation {
     NSMutableArray *files = [NSMutableArray array];
     
     for (IDESchemeActionCodeCoverageFile *file in target.sourceFiles) {
-        [files addObject:[NSDictionary _dictionaryFromCodeCoverageFile:file]];
+        [files addObject:[NSDictionary _dictionaryFromCodeCoverageFile:file addingLocation:addLocation]];
     }
     
     return @{@"name":target.name,
@@ -39,7 +39,7 @@
              @"files":files};
 }
 
-+ (NSDictionary*)_dictionaryFromCodeCoverageFile:(IDESchemeActionCodeCoverageFile *)file {
++ (NSDictionary*)_dictionaryFromCodeCoverageFile:(IDESchemeActionCodeCoverageFile *)file addingLocation:(BOOL)addLocation {
     NSMutableArray *functions = [NSMutableArray array];
     
     for (IDESchemeActionCodeCoverageFunction *function in file.functions) {
@@ -47,10 +47,16 @@
         [functions addObject:dictionary];
     }
     
-    return @{@"name":file.name,
-             @"location":file.documentLocation,
-             @"coverage":file.lineCoverage,
-             @"functions":functions};
+    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    dictionary[@"name"] = file.name;
+    dictionary[@"coverage"] = file.lineCoverage;
+    dictionary[@"functions"] = functions;
+    
+    if (addLocation) {
+        dictionary[@"location"] = file.documentLocation;
+    }
+    
+    return dictionary;
 }
 
 @end
