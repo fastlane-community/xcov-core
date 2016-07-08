@@ -7,7 +7,7 @@
 #import "DDCliApplication.h"
 #import "Core.h"
 
-NSString *const MiddlewareAppVersion    = @"0.2";
+NSString *const MiddlewareAppVersion    = @"0.3";
 NSString *const MiddlewareAppName       = @"xcov-core";
 
 @implementation Middleware
