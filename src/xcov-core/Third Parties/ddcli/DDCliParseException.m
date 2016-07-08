@@ -30,8 +30,8 @@
 + (DDCliParseException *) parseExceptionWithReason: (NSString *) reason
                                           exitCode: (int) exitCode;
 {
-    return [[[self alloc] initWithReason: reason
-                                exitCode: exitCode] autorelease];
+    return [[self alloc] initWithReason: reason
+                               exitCode: exitCode];
 }
 
 - (id) initWithReason: (NSString *) reason

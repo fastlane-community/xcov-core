@@ -44,7 +44,7 @@
 
 + (DDGetoptLongParser *) optionsWithTarget: (id) target;
 {
-    return [[[self alloc] initWithTarget: target] autorelease];
+    return [[self alloc] initWithTarget: target];
 }
 
 - (id) initWithTarget: (id) target;
@@ -65,15 +65,6 @@
     mGetoptFunction = getopt_long;
     
     return self;
-}
-
-- (void) dealloc
-{
-    [mOptionInfoMap release];
-    [mOptionString release];
-    [mOptionsData release];
-    
-    [super dealloc];
 }
 
 - (id) target;
