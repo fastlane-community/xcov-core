@@ -34,7 +34,6 @@ void ddfprintf(FILE * stream, NSString * format, ...)
     va_end(arguments);
     
     fprintf(stream, "%s", [string UTF8String]);
-    [string release];
 }
 
 void ddprintf(NSString * format, ...)
@@ -46,5 +45,4 @@ void ddprintf(NSString * format, ...)
     va_end(arguments);
     
     printf("%s", [string UTF8String]);
-    [string release];
 }

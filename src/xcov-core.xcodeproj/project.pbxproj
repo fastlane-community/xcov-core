@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072F06D51C5639E9004DAE1A /* DDCliApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06CD1C5639E9004DAE1A /* DDCliApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06CF1C5639E9004DAE1A /* DDCliParseException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D11C5639E9004DAE1A /* DDCliUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072F06D51C5639E9004DAE1A /* DDCliApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06CD1C5639E9004DAE1A /* DDCliApplication.m */; };
+		072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06CF1C5639E9004DAE1A /* DDCliParseException.m */; };
+		072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D11C5639E9004DAE1A /* DDCliUtil.m */; };
+		072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */; };
 		072F06DB1C563A28004DAE1A /* Middleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06DA1C563A28004DAE1A /* Middleware.m */; };
 		C1E617EB1C5631D900FB32CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617EA1C5631D900FB32CE /* main.m */; };
 		C1E618001C5631F700FB32CE /* IDESchemeActionCodeCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F31C5631F700FB32CE /* IDESchemeActionCodeCoverage.m */; };
@@ -346,6 +346,7 @@
 		C1E617EF1C5631D900FB32CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,6 +354,7 @@
 		C1E617F01C5631D900FB32CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
