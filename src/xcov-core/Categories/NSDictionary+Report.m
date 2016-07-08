@@ -48,6 +48,7 @@
     }
     
     return @{@"name":file.name,
+             @"location":file.documentLocation,
              @"coverage":file.lineCoverage,
              @"functions":functions};
 }
