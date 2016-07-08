@@ -9,6 +9,6 @@
 
 @interface NSDictionary (Report)
 
-+ (NSDictionary*)dictionaryFromCodeCoverage:(IDESchemeActionCodeCoverage *)codeCoverage;
++ (NSDictionary*)dictionaryFromCodeCoverage:(IDESchemeActionCodeCoverage *)codeCoverage addingLocation:(BOOL)addLocation;
 
 @end
