@@ -4,10 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreOptions.h"
 
 @interface Reader : NSObject
 
-- (instancetype)initWithPath:(NSString*)path;
+- (instancetype)initWithOptions:(CoreOptions)options;
 - (NSDictionary *)read;
 
 @end

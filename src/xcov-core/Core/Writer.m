@@ -9,18 +9,18 @@
 
 @interface Writer()
 
-@property (nonatomic, copy, readonly) NSString *path;
+@property (nonatomic, assign, readonly) CoreOptions options;
 @property (nonatomic, strong, readonly) NSFileManager *fileManager;
 
 @end
 
 @implementation Writer
 
-- (instancetype)initWithPath:(NSString*)path {
+- (instancetype)initWithOptions:(CoreOptions)options {
     self = [super init];
     
     if (self != nil) {
-        self->_path = path;
+        self->_options = options;
         self->_fileManager = [NSFileManager defaultManager];
     }
     
@@ -42,8 +42,8 @@
         if (error == nil && data != nil) {
             ddprintf(@"Report successfully serialized\n");
             ddprintf(@"Writing report on disk...\n");
-            [data writeToFile:self.path atomically:YES];
-            ddprintf(@"Coverage report successfully created at path: %@\n", self.path);
+            [data writeToFile:self.options.target atomically:YES];
+            ddprintf(@"Coverage report successfully created at path: %@\n", self.options.target);
             return;
         }
     }
@@ -54,7 +54,7 @@
 #pragma mark - Private methods
 
 - (BOOL)_isValidPath {
-    NSString *directory = [self.path stringByDeletingLastPathComponent];
+    NSString *directory = [self.options.target stringByDeletingLastPathComponent];
     
     BOOL isDirectory;
     if ([self.fileManager fileExistsAtPath:directory isDirectory:&isDirectory]) {

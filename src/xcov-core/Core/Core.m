@@ -9,8 +9,7 @@
 
 @interface Core()
 
-@property (nonatomic, copy, readonly) NSString *sourcePath;
-@property (nonatomic, copy, readonly) NSString *targetPath;
+@property (nonatomic, assign, readonly) CoreOptions options;
 
 @property (nonatomic, strong, readonly) Reader *reader;
 @property (nonatomic, strong, readonly) Writer *writer;
@@ -22,12 +21,11 @@
 @synthesize reader = _reader;
 @synthesize writer = _writer;
 
-- (instancetype)initWithSourcePath:(NSString*)sourcePath targetPath:(NSString*)targetPath {
+- (instancetype)initWithOptions:(CoreOptions)options {
     self = [super init];
-    
+
     if (self != nil) {
-        self->_sourcePath = sourcePath;
-        self->_targetPath = targetPath;
+        self->_options = options;
     }
     
     return self;
@@ -44,7 +42,7 @@
 
 - (Reader *)reader {
     if (self->_reader == nil) {
-        self->_reader = [[Reader alloc] initWithPath:self.sourcePath];
+        self->_reader = [[Reader alloc] initWithOptions:self.options];
     }
     
     return self->_reader;
@@ -52,7 +50,7 @@
 
 - (Writer *)writer {
     if (self->_writer == nil) {
-        self->_writer = [[Writer alloc] initWithPath:self.targetPath];
+        self->_writer = [[Writer alloc] initWithOptions:self.options];
     }
     
     return self->_writer;
