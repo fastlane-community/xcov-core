@@ -11,7 +11,10 @@
     self = [super init];
     
     if (self != nil) {
+        self.executionCount = [aDecoder decodeIntForKey:@"c"];
+        self.executable = [aDecoder decodeBoolForKey:@"x"];
         
+        self.subRanges = [aDecoder decodeObjectForKey:@"s"];
     }
     
     return self;

@@ -6,6 +6,9 @@
 #import <Foundation/Foundation.h>
 
 @interface DVTSourceFileLineCoverageData : NSObject <NSCoding>
+@property(nonatomic, copy) NSArray *subRanges;
+@property(nonatomic, assign, getter=isExecutable) BOOL executable;
+@property(nonatomic, assign) int executionCount;
 
 @end
 

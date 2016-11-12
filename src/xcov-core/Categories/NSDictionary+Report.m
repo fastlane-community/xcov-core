@@ -7,9 +7,8 @@
 
 #import "IDESchemeActionCodeCoverage.h"
 #import "IDESchemeActionCodeCoverageFile.h"
-#import "DVTSourceFileLineCoverageData.h"
 #import "IDESchemeActionCodeCoverageTarget.h"
-#import "IDESchemeActionCodeCoverageFunction.h"
+#import "IDESchemeActionCodeCoverageFile+Report.h"
 
 @implementation NSDictionary (Report)
 
@@ -40,17 +39,11 @@
 }
 
 + (NSDictionary*)_dictionaryFromCodeCoverageFile:(IDESchemeActionCodeCoverageFile *)file addingLocation:(BOOL)addLocation {
-    NSMutableArray *functions = [NSMutableArray array];
-    
-    for (IDESchemeActionCodeCoverageFunction *function in file.functions) {
-        NSDictionary *dictionary =  @{@"coverage":function.lineCoverage, @"name":function.name};
-        [functions addObject:dictionary];
-    }
-    
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     dictionary[@"name"] = file.name;
     dictionary[@"coverage"] = file.lineCoverage;
-    dictionary[@"functions"] = functions;
+    dictionary[@"functions"] = [file convertFunctionsToDictionaries];
+    dictionary[@"lines"] = [file linesInfo];
     
     if (addLocation) {
         dictionary[@"location"] = file.documentLocation;
