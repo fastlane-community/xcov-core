@@ -11,8 +11,7 @@
     self = [super init];
     
     if (self != nil) {
-        _executionCount = [aDecoder decodeIntForKey:@"c"];
-        _executable = [aDecoder decodeIntForKey:@"x"];
+        _executionCount = [aDecoder decodeIntForKey:@"x"];
         _length = [aDecoder decodeInt64ForKey:@"len"];
         _column = [aDecoder decodeInt64ForKey:@"c"];
         _line = [aDecoder decodeInt64ForKey:@"l"];
