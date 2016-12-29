@@ -41,7 +41,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     DDGetoptOption optionTable[] = {
         {@"source",       's',    DDGetoptRequiredArgument},
         {@"output",       'o',    DDGetoptRequiredArgument},
-        {@"add-location",   0,    DDGetoptNoArgument},
         {@"help",         'h',    DDGetoptNoArgument},
         {@"version",      'v',    DDGetoptNoArgument},
         {nil,               0,    0},
@@ -56,7 +55,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     CoreOptions options;
     options.source = [self convertToAbsolutePath:_source];
     options.target = [self convertToAbsolutePath:_output];
-    options.addLocation = _addLocation;
     
     Core *core = [[Core alloc] initWithOptions:options];
     [core run];
@@ -71,7 +69,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     ddprintf(@"\n"
              @"  -s, --source FILE             Full path to the .xccoverage file\n"
              @"  -o, --output FILE             Full path to the resulting .json file\n"
-             @"      --add-location            Add location field to file dictionary\n"
              @"  -v  --version                 Display version\n"
              @"  -h, --help                    Display this help\n"
              @"\n"
