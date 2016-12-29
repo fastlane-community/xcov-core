@@ -14,7 +14,7 @@ NSString *const MiddlewareAppName       = @"xcov-core";
 
 #pragma mark - DDCliApplicationDelegate methods
 
-- (int)application:(DDCliApplication *)app runWithArguments: (NSArray *)arguments {
+- (int)application:(DDCliApplication *)app runWithArguments:(NSArray *)arguments {
     
     ddprintf(@"------ %@ ------\n", MiddlewareAppName);
     
@@ -47,7 +47,7 @@ NSString *const MiddlewareAppName       = @"xcov-core";
         {nil,               0,    0},
     };
     
-    [optionsParser addOptionsFromTable: optionTable];
+    [optionsParser addOptionsFromTable:optionTable];
 }
 
 #pragma mark - Private methods
