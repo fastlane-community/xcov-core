@@ -44,9 +44,8 @@
         exit(65);
     }
     
-    ddprintf(@"Add file location? %@\n", self.options.addLocation ? @"yes" : @"no");
     ddprintf(@"Parsing .xccoverage file...\n");
-    NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage addingLocation:self.options.addLocation];
+    NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage];
     if (report == nil) {
         ddprintf(@"Unable to parse .xccoverage file\n");
         exit(65);
@@ -60,10 +59,7 @@
 - (BOOL)_isValidPath {
     BOOL isDirectory;
     if ([self.fileManager fileExistsAtPath:self.options.source isDirectory:&isDirectory]) {
-        if (isDirectory) {
-            return NO;
-        }
-        return YES;
+        return !isDirectory;
     }
     return NO;
 }
