@@ -17,7 +17,6 @@ $ xcov-core -s build/EasyPeasy.xccoverage -o report.json
 ### Parameters allowed
 * `--source` `-s`: Path to the `.xccoverage` file.
 * `--output` `-o`: Path to the resulting `.json` file.
-* `--add-location`: Add location field to file dictionary.
 * `--version` `-v`: Display version.
 * `--help` `-h`: Display this help.
 
