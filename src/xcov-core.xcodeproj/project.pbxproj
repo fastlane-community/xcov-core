@@ -16,6 +16,9 @@
 		A341BF241DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF231DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m */; };
 		A341BF271DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF261DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m */; };
 		A341BF2A1DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */; };
+		A381D1B91E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A381D1B81E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m */; };
+		A381D1BC1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A381D1BB1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m */; };
+		A381D1BF1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A381D1BE1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m */; };
 		A3C2DED61D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C2DED51D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m */; };
 		C1E617EB1C5631D900FB32CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617EA1C5631D900FB32CE /* main.m */; };
 		C1E618001C5631F700FB32CE /* IDESchemeActionCodeCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F31C5631F700FB32CE /* IDESchemeActionCodeCoverage.m */; };
@@ -25,7 +28,6 @@
 		C1E618041C5631F700FB32CE /* DVTSourceFileLineCoverageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617FB1C5631F700FB32CE /* DVTSourceFileLineCoverageData.m */; };
 		C1E618051C5631F700FB32CE /* DVTCoverageDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617FD1C5631F700FB32CE /* DVTCoverageDataContainer.m */; };
 		C1E618061C5631F700FB32CE /* DVTSourceCodeSymbolKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617FF1C5631F700FB32CE /* DVTSourceCodeSymbolKind.m */; };
-		C1E6180A1C56323F00FB32CE /* NSDictionary+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E618091C56323F00FB32CE /* NSDictionary+Report.m */; };
 		C1E618121C56326900FB32CE /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6180D1C56326900FB32CE /* Core.m */; };
 		C1E618131C56326900FB32CE /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6180F1C56326900FB32CE /* Reader.m */; };
 		C1E618141C56326900FB32CE /* Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E618111C56326900FB32CE /* Writer.m */; };
@@ -63,6 +65,12 @@
 		A341BF261DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileHighlightingRange.m; sourceTree = "<group>"; };
 		A341BF281DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESchemeActionCodeCoverageFile+Report.h"; sourceTree = "<group>"; };
 		A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESchemeActionCodeCoverageFile+Report.m"; sourceTree = "<group>"; };
+		A381D1B71E166A34002A644A /* DVTSourceFileLineCoverageData+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSourceFileLineCoverageData+Report.h"; sourceTree = "<group>"; };
+		A381D1B81E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTSourceFileLineCoverageData+Report.m"; sourceTree = "<group>"; };
+		A381D1BA1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESchemeActionCodeCoverageTarget+Report.h"; sourceTree = "<group>"; };
+		A381D1BB1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESchemeActionCodeCoverageTarget+Report.m"; sourceTree = "<group>"; };
+		A381D1BD1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESchemeActionCodeCoverage+Report.h"; sourceTree = "<group>"; };
+		A381D1BE1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESchemeActionCodeCoverage+Report.m"; sourceTree = "<group>"; };
 		A3C2DED41D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileCodeCoverageRange.h; sourceTree = "<group>"; };
 		A3C2DED51D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileCodeCoverageRange.m; sourceTree = "<group>"; };
 		C1234B151D303B96004AB3A1 /* CoreOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreOptions.h; sourceTree = "<group>"; };
@@ -82,8 +90,6 @@
 		C1E617FD1C5631F700FB32CE /* DVTCoverageDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTCoverageDataContainer.m; sourceTree = "<group>"; };
 		C1E617FE1C5631F700FB32CE /* DVTSourceCodeSymbolKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeSymbolKind.h; sourceTree = "<group>"; };
 		C1E617FF1C5631F700FB32CE /* DVTSourceCodeSymbolKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceCodeSymbolKind.m; sourceTree = "<group>"; };
-		C1E618081C56323F00FB32CE /* NSDictionary+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Report.h"; sourceTree = "<group>"; };
-		C1E618091C56323F00FB32CE /* NSDictionary+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Report.m"; sourceTree = "<group>"; };
 		C1E6180C1C56326900FB32CE /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C1E6180D1C56326900FB32CE /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		C1E6180E1C56326900FB32CE /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reader.h; sourceTree = "<group>"; };
@@ -190,10 +196,14 @@
 		C1E618071C56323100FB32CE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				C1E618081C56323F00FB32CE /* NSDictionary+Report.h */,
-				C1E618091C56323F00FB32CE /* NSDictionary+Report.m */,
+				A381D1BD1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.h */,
+				A381D1BE1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m */,
 				A341BF281DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.h */,
 				A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */,
+				A381D1BA1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.h */,
+				A381D1BB1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m */,
+				A381D1B71E166A34002A644A /* DVTSourceFileLineCoverageData+Report.h */,
+				A381D1B81E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -274,7 +284,7 @@
 				C1E618031C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m in Sources */,
 				A341BF211DD7B96A002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.m in Sources */,
 				C1E618021C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m in Sources */,
-				C1E6180A1C56323F00FB32CE /* NSDictionary+Report.m in Sources */,
+				A381D1BC1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m in Sources */,
 				C1E618141C56326900FB32CE /* Writer.m in Sources */,
 				C1E618131C56326900FB32CE /* Reader.m in Sources */,
 				072F06D51C5639E9004DAE1A /* DDCliApplication.m in Sources */,
@@ -287,9 +297,11 @@
 				C1E618051C5631F700FB32CE /* DVTCoverageDataContainer.m in Sources */,
 				C1E617EB1C5631D900FB32CE /* main.m in Sources */,
 				A341BF241DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m in Sources */,
+				A381D1B91E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m in Sources */,
 				072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */,
 				A341BF2A1DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m in Sources */,
 				C1E618041C5631F700FB32CE /* DVTSourceFileLineCoverageData.m in Sources */,
+				A381D1BF1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

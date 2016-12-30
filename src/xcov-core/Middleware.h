@@ -9,6 +9,7 @@
 @interface Middleware : NSObject <DDCliApplicationDelegate> {
     NSString * _source;
     NSString * _output;
+    BOOL _includeLinesInfo;
     BOOL _version;
     BOOL _help;
 }

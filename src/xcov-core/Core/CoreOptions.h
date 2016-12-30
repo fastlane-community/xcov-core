@@ -8,4 +8,5 @@
 typedef struct {
     __unsafe_unretained NSString *source;
     __unsafe_unretained NSString *target;
+    BOOL includeLinesInfo;
 } CoreOptions;

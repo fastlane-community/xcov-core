@@ -7,6 +7,6 @@
 
 @interface IDESchemeActionCodeCoverageFile (Report)
 - (NSArray *)convertFunctionsToDictionaries;
-- (NSDictionary *)linesInfo;
+- (NSArray *)convertLinesToDictionaries;
 
 @end

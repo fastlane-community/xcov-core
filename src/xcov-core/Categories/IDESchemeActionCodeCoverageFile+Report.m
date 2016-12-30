@@ -6,43 +6,31 @@
 #import "IDESchemeActionCodeCoverageFile+Report.h"
 
 #import "IDESchemeActionCodeCoverageFunction.h"
-#import "DVTSourceFileLineCoverageData.h"
+#import "DVTSourceFileLineCoverageData+Report.h"
 
-@implementation IDESchemeActionCodeCoverageFile (DictionaryReport)
+@implementation IDESchemeActionCodeCoverageFile (Report)
 
 - (NSArray *)convertFunctionsToDictionaries {
     NSMutableArray *functions = [NSMutableArray array];
     
     for (IDESchemeActionCodeCoverageFunction *function in self.functions) {
-        NSDictionary *dictionary =  @{@"coverage":function.lineCoverage, @"name":function.name};
+        NSDictionary *dictionary = @{@"coverage": function.lineCoverage,
+                                     @"name": function.name};
         [functions addObject:dictionary];
     }
     
     return [NSArray arrayWithArray:functions];
 }
 
-- (NSDictionary *)linesInfo {
-    return @{@"total": @(self.lines.count),
-             @"executable": @(self.executableLines.count),
-             @"covered": @(self.coveredLines.count)};
-}
-
-#pragma mark - Private methods
-
-- (NSArray *)executableLines {
-    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(DVTSourceFileLineCoverageData* line, NSDictionary *bindings) {
-        return line.isExecutable;
-    }];
+- (NSArray *)convertLinesToDictionaries {
+    NSUInteger capacity = [self.lines count];
+    NSMutableArray *dictionaries = [[NSMutableArray alloc] initWithCapacity:capacity];
     
-    return [self.lines filteredArrayUsingPredicate: predicate];
-}
-
-- (NSArray *)coveredLines {
-    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(DVTSourceFileLineCoverageData* line, NSDictionary *bindings) {
-        return (line.executionCount > 0);
-    }];
+    for (DVTSourceFileLineCoverageData *line in self.lines) {
+        [dictionaries addObject:[line convertToDictionary]];
+    }
     
-    return [self.lines filteredArrayUsingPredicate: predicate];
+    return [NSArray arrayWithArray:dictionaries];
 }
 
 @end
