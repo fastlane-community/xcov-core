@@ -3,10 +3,9 @@
 //  Copyright © 2016 nakioStudio. All rights reserved.
 //
 
-#import "IDESchemeActionCodeCoverage.h"
+#import "IDESchemeActionCodeCoverage+Report.h"
 
 #import "DDCliUtil.h"
-#import "NSDictionary+Report.h"
 #import "Reader.h"
 
 @interface Reader()
@@ -45,7 +44,8 @@
     }
     
     ddprintf(@"Parsing .xccoverage file...\n");
-    NSDictionary *report = [NSDictionary dictionaryFromCodeCoverage:coverage];
+    BOOL includeLines = self.options.includeLinesInfo;
+    NSDictionary *report = [coverage convertToDictionaryIncludingLines:includeLines];
     if (report == nil) {
         ddprintf(@"Unable to parse .xccoverage file\n");
         exit(65);
