@@ -19,7 +19,7 @@
         [targets addObject:[NSDictionary _dictionaryFromCodeCoverageTarget:target]];
     }
     
-    NSDictionary *dictionary = @{@"targets":targets};
+    NSDictionary *dictionary = @{@"targets": targets};
     
     return dictionary;
 }
@@ -33,18 +33,18 @@
         [files addObject:[NSDictionary _dictionaryFromCodeCoverageFile:file]];
     }
     
-    return @{@"name":target.name,
-             @"coverage":target.lineCoverage,
-             @"files":files};
+    return @{@"name": target.name,
+             @"coverage": target.lineCoverage,
+             @"files": files};
 }
 
 + (NSDictionary*)_dictionaryFromCodeCoverageFile:(IDESchemeActionCodeCoverageFile *)file {
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    
     dictionary[@"name"] = file.name;
     dictionary[@"coverage"] = file.lineCoverage;
     dictionary[@"functions"] = [file convertFunctionsToDictionaries];
-    dictionary[@"lines"] = [file linesInfo];
-    
+    dictionary[@"lines"] = [file convertLinesToDictionaries];
     dictionary[@"location"] = file.documentLocation;
     
     return dictionary;
