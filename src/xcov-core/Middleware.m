@@ -54,8 +54,8 @@ NSString *const MiddlewareAppName       = @"xcov-core";
 
 - (void)_runCore {
     CoreOptions options;
-    options.source = _source;
-    options.target = _output;
+    options.source = [self convertToAbsolutePath:_source];
+    options.target = [self convertToAbsolutePath:_output];
     options.addLocation = _addLocation;
     
     Core *core = [[Core alloc] initWithOptions:options];
@@ -80,6 +80,18 @@ NSString *const MiddlewareAppName       = @"xcov-core";
 
 - (void)_printVersion {
     ddprintf(@"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
+}
+
+- (NSString *)convertToAbsolutePath:(NSString *)path {
+    if([path hasPrefix:@"/"]) { // it's already an absolute path
+        return path;
+    }
+
+    if([path hasPrefix:@"~"]) { // is relative to user folder
+        return [path stringByExpandingTildeInPath];
+    }
+
+    return [[[NSURL alloc] initFileURLWithPath:path] path];
 }
 
 @end
