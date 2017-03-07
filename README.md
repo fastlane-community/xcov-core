@@ -17,7 +17,7 @@ $ xcov-core -s build/EasyPeasy.xccoverage -o report.json
 ### Parameters allowed
 * `--source` `-s`: Path to the `.xccoverage` file.
 * `--output` `-o`: Path to the resulting `.json` file.
-* `--add-lines-info`: Include full info about lines and ranges.
+* `--include-lines-info`: Include full info about lines and ranges.
 * `--version` `-v`: Display version.
 * `--help` `-h`: Display this help.
 
