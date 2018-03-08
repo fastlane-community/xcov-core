@@ -29,7 +29,7 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     }
     
     if (_source == nil || _output == nil) {
-        ddfprintf(stderr, @"Source and target paths are required\n");
+        ddfprintf(stderr, @"--source and --output paths parameters are required\n");
         return EX_USAGE;
     }
     

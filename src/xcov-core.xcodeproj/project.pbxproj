@@ -12,22 +12,11 @@
 		072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D11C5639E9004DAE1A /* DDCliUtil.m */; };
 		072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */; };
 		072F06DB1C563A28004DAE1A /* Middleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F06DA1C563A28004DAE1A /* Middleware.m */; };
-		A341BF211DD7B96A002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF201DD7B969002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.m */; };
-		A341BF241DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF231DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m */; };
-		A341BF271DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF261DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m */; };
 		A341BF2A1DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */; };
 		A381D1B91E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A381D1B81E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m */; };
 		A381D1BC1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A381D1BB1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m */; };
 		A381D1BF1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = A381D1BE1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m */; };
-		A3C2DED61D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C2DED51D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m */; };
 		C1E617EB1C5631D900FB32CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617EA1C5631D900FB32CE /* main.m */; };
-		C1E618001C5631F700FB32CE /* IDESchemeActionCodeCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F31C5631F700FB32CE /* IDESchemeActionCodeCoverage.m */; };
-		C1E618011C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F51C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m */; };
-		C1E618021C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F71C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m */; };
-		C1E618031C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617F91C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m */; };
-		C1E618041C5631F700FB32CE /* DVTSourceFileLineCoverageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617FB1C5631F700FB32CE /* DVTSourceFileLineCoverageData.m */; };
-		C1E618051C5631F700FB32CE /* DVTCoverageDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617FD1C5631F700FB32CE /* DVTCoverageDataContainer.m */; };
-		C1E618061C5631F700FB32CE /* DVTSourceCodeSymbolKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E617FF1C5631F700FB32CE /* DVTSourceCodeSymbolKind.m */; };
 		C1E618121C56326900FB32CE /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6180D1C56326900FB32CE /* Core.m */; };
 		C1E618131C56326900FB32CE /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6180F1C56326900FB32CE /* Reader.m */; };
 		C1E618141C56326900FB32CE /* Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E618111C56326900FB32CE /* Writer.m */; };
@@ -57,12 +46,6 @@
 		072F06D41C5639E9004DAE1A /* DDGetoptLongParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGetoptLongParser.m; sourceTree = "<group>"; };
 		072F06D91C563A28004DAE1A /* Middleware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Middleware.h; sourceTree = "<group>"; };
 		072F06DA1C563A28004DAE1A /* Middleware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Middleware.m; sourceTree = "<group>"; };
-		A341BF1F1DD7B969002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileCodeCoverageUncoveredRange.h; sourceTree = "<group>"; };
-		A341BF201DD7B969002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileCodeCoverageUncoveredRange.m; sourceTree = "<group>"; };
-		A341BF221DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileCodeCoverageCoveredRange.h; sourceTree = "<group>"; };
-		A341BF231DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileCodeCoverageCoveredRange.m; sourceTree = "<group>"; };
-		A341BF251DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileHighlightingRange.h; sourceTree = "<group>"; };
-		A341BF261DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileHighlightingRange.m; sourceTree = "<group>"; };
 		A341BF281DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESchemeActionCodeCoverageFile+Report.h"; sourceTree = "<group>"; };
 		A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESchemeActionCodeCoverageFile+Report.m"; sourceTree = "<group>"; };
 		A381D1B71E166A34002A644A /* DVTSourceFileLineCoverageData+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSourceFileLineCoverageData+Report.h"; sourceTree = "<group>"; };
@@ -71,25 +54,9 @@
 		A381D1BB1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESchemeActionCodeCoverageTarget+Report.m"; sourceTree = "<group>"; };
 		A381D1BD1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESchemeActionCodeCoverage+Report.h"; sourceTree = "<group>"; };
 		A381D1BE1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESchemeActionCodeCoverage+Report.m"; sourceTree = "<group>"; };
-		A3C2DED41D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileCodeCoverageRange.h; sourceTree = "<group>"; };
-		A3C2DED51D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileCodeCoverageRange.m; sourceTree = "<group>"; };
 		C1234B151D303B96004AB3A1 /* CoreOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreOptions.h; sourceTree = "<group>"; };
 		C1E617E71C5631D800FB32CE /* xcov-core */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "xcov-core"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E617EA1C5631D900FB32CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C1E617F21C5631F700FB32CE /* IDESchemeActionCodeCoverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverage.h; sourceTree = "<group>"; };
-		C1E617F31C5631F700FB32CE /* IDESchemeActionCodeCoverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverage.m; sourceTree = "<group>"; };
-		C1E617F41C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverageTarget.h; sourceTree = "<group>"; };
-		C1E617F51C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverageTarget.m; sourceTree = "<group>"; };
-		C1E617F61C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverageFile.h; sourceTree = "<group>"; };
-		C1E617F71C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverageFile.m; sourceTree = "<group>"; };
-		C1E617F81C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESchemeActionCodeCoverageFunction.h; sourceTree = "<group>"; };
-		C1E617F91C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESchemeActionCodeCoverageFunction.m; sourceTree = "<group>"; };
-		C1E617FA1C5631F700FB32CE /* DVTSourceFileLineCoverageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceFileLineCoverageData.h; sourceTree = "<group>"; };
-		C1E617FB1C5631F700FB32CE /* DVTSourceFileLineCoverageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceFileLineCoverageData.m; sourceTree = "<group>"; };
-		C1E617FC1C5631F700FB32CE /* DVTCoverageDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCoverageDataContainer.h; sourceTree = "<group>"; };
-		C1E617FD1C5631F700FB32CE /* DVTCoverageDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTCoverageDataContainer.m; sourceTree = "<group>"; };
-		C1E617FE1C5631F700FB32CE /* DVTSourceCodeSymbolKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeSymbolKind.h; sourceTree = "<group>"; };
-		C1E617FF1C5631F700FB32CE /* DVTSourceCodeSymbolKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceCodeSymbolKind.m; sourceTree = "<group>"; };
 		C1E6180C1C56326900FB32CE /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C1E6180D1C56326900FB32CE /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		C1E6180E1C56326900FB32CE /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reader.h; sourceTree = "<group>"; };
@@ -154,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				C1E618071C56323100FB32CE /* Categories */,
-				C1E617F11C5631E400FB32CE /* IDE */,
 				C1E6180B1C56325800FB32CE /* Core */,
 				C1E617EA1C5631D900FB32CE /* main.m */,
 				072F06D91C563A28004DAE1A /* Middleware.h */,
@@ -164,44 +130,15 @@
 			path = "xcov-core";
 			sourceTree = "<group>";
 		};
-		C1E617F11C5631E400FB32CE /* IDE */ = {
-			isa = PBXGroup;
-			children = (
-				C1E617F21C5631F700FB32CE /* IDESchemeActionCodeCoverage.h */,
-				C1E617F31C5631F700FB32CE /* IDESchemeActionCodeCoverage.m */,
-				C1E617F41C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.h */,
-				C1E617F51C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m */,
-				C1E617F61C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.h */,
-				C1E617F71C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m */,
-				C1E617F81C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.h */,
-				C1E617F91C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m */,
-				C1E617FA1C5631F700FB32CE /* DVTSourceFileLineCoverageData.h */,
-				C1E617FB1C5631F700FB32CE /* DVTSourceFileLineCoverageData.m */,
-				C1E617FC1C5631F700FB32CE /* DVTCoverageDataContainer.h */,
-				C1E617FD1C5631F700FB32CE /* DVTCoverageDataContainer.m */,
-				C1E617FE1C5631F700FB32CE /* DVTSourceCodeSymbolKind.h */,
-				C1E617FF1C5631F700FB32CE /* DVTSourceCodeSymbolKind.m */,
-				A3C2DED41D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.h */,
-				A3C2DED51D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m */,
-				A341BF1F1DD7B969002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.h */,
-				A341BF201DD7B969002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.m */,
-				A341BF221DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.h */,
-				A341BF231DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m */,
-				A341BF251DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.h */,
-				A341BF261DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m */,
-			);
-			path = IDE;
-			sourceTree = "<group>";
-		};
 		C1E618071C56323100FB32CE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				A381D1BD1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.h */,
 				A381D1BE1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m */,
-				A341BF281DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.h */,
-				A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */,
 				A381D1BA1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.h */,
 				A381D1BB1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m */,
+				A341BF281DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.h */,
+				A341BF291DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m */,
 				A381D1B71E166A34002A644A /* DVTSourceFileLineCoverageData+Report.h */,
 				A381D1B81E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m */,
 			);
@@ -280,27 +217,16 @@
 			files = (
 				072F06DB1C563A28004DAE1A /* Middleware.m in Sources */,
 				C1E618121C56326900FB32CE /* Core.m in Sources */,
-				A3C2DED61D79B49C00ED8570 /* DVTSourceFileCodeCoverageRange.m in Sources */,
-				C1E618031C5631F700FB32CE /* IDESchemeActionCodeCoverageFunction.m in Sources */,
-				A341BF211DD7B96A002F5084 /* DVTSourceFileCodeCoverageUncoveredRange.m in Sources */,
-				C1E618021C5631F700FB32CE /* IDESchemeActionCodeCoverageFile.m in Sources */,
 				A381D1BC1E167841002A644A /* IDESchemeActionCodeCoverageTarget+Report.m in Sources */,
 				C1E618141C56326900FB32CE /* Writer.m in Sources */,
 				C1E618131C56326900FB32CE /* Reader.m in Sources */,
 				072F06D51C5639E9004DAE1A /* DDCliApplication.m in Sources */,
 				072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */,
-				C1E618061C5631F700FB32CE /* DVTSourceCodeSymbolKind.m in Sources */,
-				C1E618011C5631F700FB32CE /* IDESchemeActionCodeCoverageTarget.m in Sources */,
-				A341BF271DD7B9EC002F5084 /* DVTSourceFileHighlightingRange.m in Sources */,
-				C1E618001C5631F700FB32CE /* IDESchemeActionCodeCoverage.m in Sources */,
 				072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */,
-				C1E618051C5631F700FB32CE /* DVTCoverageDataContainer.m in Sources */,
 				C1E617EB1C5631D900FB32CE /* main.m in Sources */,
-				A341BF241DD7B99B002F5084 /* DVTSourceFileCodeCoverageCoveredRange.m in Sources */,
 				A381D1B91E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m in Sources */,
 				072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */,
 				A341BF2A1DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m in Sources */,
-				C1E618041C5631F700FB32CE /* DVTSourceFileLineCoverageData.m in Sources */,
 				A381D1BF1E167A50002A644A /* IDESchemeActionCodeCoverage+Report.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -403,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -3,9 +3,10 @@
 //  Copyright © 2016 nakioStudio. All rights reserved.
 //
 
-#import "IDESchemeActionCodeCoverageTarget.h"
+#import <Foundation/Foundation.h>
 
-@interface IDESchemeActionCodeCoverageTarget (Report)
-- (NSDictionary *)convertToDictionaryIncludingLines:(BOOL)includeLines;
+@interface NSObject (IDESchemeActionCodeCoverageTarget)
+
+- (NSDictionary *)IDESchemeActionCodeCoverageTarget_convertToDictionaryIncludingLines:(BOOL)includeLines;
 
 @end
