@@ -36,10 +36,8 @@
         exit(66);
     }
     
-    const char *frameworkPath = [self.options.xcodePath stringByAppendingPathComponent:@"Contents/Frameworks/IDEFoundation.framework/Versions/A/IDEFoundation"].UTF8String;
-    if (dlopen(frameworkPath, RTLD_LAZY) == NULL) {
+    if (dlopen(self.options.ideFoundationPath.UTF8String, RTLD_LAZY) == NULL) {
         ddprintf(@"IDEFoundation could not be loaded\n");
-        CFRelease(frameworkPath);
         exit(66);
     }
     
