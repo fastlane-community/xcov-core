@@ -36,8 +36,12 @@
         exit(66);
     }
     
-    // TODO: Instead the path should be provided to the command line tool or extracted using xcode-select
-    dlopen("/Applications/Xcode-beta.app/Contents/Frameworks/IDEFoundation.framework/Versions/A/IDEFoundation", RTLD_LAZY);
+    const char *frameworkPath = [self.options.xcodePath stringByAppendingPathComponent:@"Contents/Frameworks/IDEFoundation.framework/Versions/A/IDEFoundation"].UTF8String;
+    if (dlopen(frameworkPath, RTLD_LAZY) == NULL) {
+        ddprintf(@"IDEFoundation could not be loaded\n");
+        CFRelease(frameworkPath);
+        exit(66);
+    }
     
     ddprintf(@"Opening .xccoverage file at path: %@\n", self.options.source);
     NSObject *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.options.source];

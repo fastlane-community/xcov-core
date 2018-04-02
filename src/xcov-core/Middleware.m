@@ -7,7 +7,7 @@
 #import "DDCliApplication.h"
 #import "Core.h"
 
-NSString *const MiddlewareAppVersion    = @"0.4";
+NSString *const MiddlewareAppVersion    = @"0.5";
 NSString *const MiddlewareAppName       = @"xcov-core";
 
 @implementation Middleware
@@ -28,8 +28,8 @@ NSString *const MiddlewareAppName       = @"xcov-core";
         return EXIT_SUCCESS;
     }
     
-    if (_source == nil || _output == nil) {
-        ddfprintf(stderr, @"--source and --output paths parameters are required\n");
+    if (_source == nil || _output == nil || _xcodePath == nil) {
+        ddfprintf(stderr, @"--source, --output and --xcode-path parameters are required\n");
         return EX_USAGE;
     }
     
@@ -41,6 +41,7 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     DDGetoptOption optionTable[] = {
         {@"source",             's',    DDGetoptRequiredArgument},
         {@"output",             'o',    DDGetoptRequiredArgument},
+        {@"xcode-path",         'x',    DDGetoptRequiredArgument},
         {@"include-lines-info",   0,    DDGetoptNoArgument},
         {@"help",               'h',    DDGetoptNoArgument},
         {@"version",            'v',    DDGetoptNoArgument},
@@ -56,6 +57,7 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     CoreOptions options;
     options.source = [self convertToAbsolutePath:_source];
     options.target = [self convertToAbsolutePath:_output];
+    options.xcodePath = _xcodePath;
     options.includeLinesInfo = _includeLinesInfo;
     Core *core = [[Core alloc] initWithOptions:options];
     [core run];
