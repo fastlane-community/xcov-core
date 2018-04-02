@@ -4,14 +4,13 @@
 //
 
 #import "DVTSourceFileLineCoverageData+Report.h"
-#import "DVTSourceFileCodeCoverageRange.h"
 
-@implementation DVTSourceFileLineCoverageData (Report)
+@implementation NSObject (DVTSourceFileLineCoverageData)
 
-- (NSDictionary *)convertToDictionary {
+- (NSDictionary *)DVTSourceFileLineCoverageData_convertToDictionary {
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
-    dictionary[@"executable"] = @(self.isExecutable);
-    dictionary[@"executionCount"] = @(self.executionCount);
+    dictionary[@"executable"] = @(((BOOL) [self performSelector:@selector(isExecutable)]));
+    dictionary[@"executionCount"] = @(((unsigned long long) [self performSelector:@selector(executionCount)]));
     
     if ([self shouldAddSubranges]) {
         dictionary[@"ranges"] = [self convertRangesIntoDictionaries];
@@ -23,13 +22,13 @@
 #pragma mark - Private Methods
 
 - (NSArray *)convertRangesIntoDictionaries {
-    NSUInteger capacity = [self.subRanges count];
+    NSUInteger capacity = (NSUInteger)[[self performSelector:@selector(subRanges)] performSelector:@selector(count)];
     NSMutableArray *dictionaries = [[NSMutableArray alloc] initWithCapacity:capacity];
     
-    for (DVTSourceFileCodeCoverageRange *range in self.subRanges) {
-        NSDictionary *dictionary = @{@"location": @(range.column),
-                                     @"length": @(range.length),
-                                     @"executionCount": @(range.executionCount)};
+    for (NSObject *range in [self performSelector:@selector(subRanges)]) {
+        NSDictionary *dictionary = @{@"location": @(((unsigned long long) [range performSelector:@selector(columnn)])),
+                                     @"length": @(((unsigned long long) [range performSelector:@selector(length)])),
+                                     @"executionCount": @(((unsigned long long) [range performSelector:@selector(executionCount)]))};
         [dictionaries addObject:dictionary];
     }
     
@@ -37,10 +36,10 @@
 }
 
 - (BOOL)shouldAddSubranges {
-    if (self.subRanges == nil) { return NO; }
+    if ([self performSelector:@selector(subRanges)] == nil) { return NO; }
     
     // If there is one range, we asume the entire line was covered
-    if (self.subRanges.count == 1) { return NO; }
+    if (((NSUInteger)[[self performSelector:@selector(subRanges)] performSelector:@selector(count)]) == 1) { return NO; }
     
     return YES;
 }

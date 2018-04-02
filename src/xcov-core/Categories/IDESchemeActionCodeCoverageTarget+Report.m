@@ -6,34 +6,34 @@
 #import "IDESchemeActionCodeCoverageTarget+Report.h"
 #import "IDESchemeActionCodeCoverageFile+Report.h"
 
-@implementation IDESchemeActionCodeCoverageTarget (Report)
-- (NSDictionary *)convertToDictionaryIncludingLines:(BOOL)includeLines {
+@implementation NSObject (IDESchemeActionCodeCoverageTarget)
+
+- (NSDictionary *)IDESchemeActionCodeCoverageTarget_convertToDictionaryIncludingLines:(BOOL)includeLines {
     NSMutableArray *files = [NSMutableArray array];
     
-    for (IDESchemeActionCodeCoverageFile *file in self.sourceFiles) {
-        NSDictionary *fileDictionary = [self dictionaryFromCodeCoverageFile:file
-                                                               includeLines:includeLines];
+    for (NSObject *file in [self performSelector:@selector(sourceFiles)]) {
+        NSDictionary *fileDictionary = [self dictionaryFromCodeCoverageFile:file includeLines:includeLines];
         [files addObject:fileDictionary];
     }
     
-    return @{@"name": self.name,
-             @"coverage": self.lineCoverage,
+    return @{@"name": [self performSelector:@selector(name)],
+             @"coverage": [self performSelector:@selector(lineCoverage)],
              @"files": files};
 }
 
 #pragma mark - Private methods
 
-- (NSDictionary *)dictionaryFromCodeCoverageFile:(IDESchemeActionCodeCoverageFile *)file
+- (NSDictionary *)dictionaryFromCodeCoverageFile:(NSObject *)file
                                     includeLines:(BOOL)includeLines {
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     
-    dictionary[@"name"] = file.name;
-    dictionary[@"coverage"] = file.lineCoverage;
-    dictionary[@"functions"] = [file convertFunctionsToDictionaries];
-    dictionary[@"location"] = file.documentLocation;
+    dictionary[@"name"] = [file performSelector:@selector(name)];
+    dictionary[@"coverage"] = [file performSelector:@selector(lineCoverage)];
+    dictionary[@"functions"] = [file IDESchemeActionCodeCoverageFile_convertFunctionsToDictionaries];
+    dictionary[@"location"] = [file performSelector:@selector(documentLocation)];
     
     if (includeLines) {
-        dictionary[@"lines"] = [file convertLinesToDictionaries];
+        dictionary[@"lines"] = [file IDESchemeActionCodeCoverageFile_convertLinesToDictionaries];
     }
     
     return dictionary;

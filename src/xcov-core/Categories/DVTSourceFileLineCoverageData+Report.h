@@ -3,9 +3,10 @@
 //  Copyright © 2016 nakioStudio. All rights reserved.
 //
 
-#import "DVTSourceFileLineCoverageData.h"
+#import <Foundation/Foundation.h>
 
-@interface DVTSourceFileLineCoverageData (Report)
-- (NSDictionary *)convertToDictionary;
+@interface NSObject (DVTSourceFileLineCoverageData)
+
+- (NSDictionary *)DVTSourceFileLineCoverageData_convertToDictionary;
 
 @end

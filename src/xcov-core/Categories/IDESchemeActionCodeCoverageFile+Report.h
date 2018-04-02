@@ -3,10 +3,11 @@
 //  Copyright © 2016 nakioStudio. All rights reserved.
 //
 
-#import "IDESchemeActionCodeCoverageFile.h"
+#import <Foundation/Foundation.h>
 
-@interface IDESchemeActionCodeCoverageFile (Report)
-- (NSArray *)convertFunctionsToDictionaries;
-- (NSArray *)convertLinesToDictionaries;
+@interface NSObject (IDESchemeActionCodeCoverageFile)
+
+- (NSArray *)IDESchemeActionCodeCoverageFile_convertFunctionsToDictionaries;
+- (NSArray *)IDESchemeActionCodeCoverageFile_convertLinesToDictionaries;
 
 @end

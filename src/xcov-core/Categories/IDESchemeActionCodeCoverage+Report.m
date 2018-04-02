@@ -6,13 +6,13 @@
 #import "IDESchemeActionCodeCoverage+Report.h"
 #import "IDESchemeActionCodeCoverageTarget+Report.h"
 
-@implementation IDESchemeActionCodeCoverage (Report)
+@implementation NSObject (IDESchemeActionCodeCoverage)
 
-- (NSDictionary *)convertToDictionaryIncludingLines:(BOOL)includeLines {
+- (NSDictionary *)IDESchemeActionCodeCoverage_convertToDictionaryIncludingLines:(BOOL)includeLines {
     NSMutableArray *targets = [NSMutableArray array];
     
-    for (IDESchemeActionCodeCoverageTarget *target in self.codeCoverageTargets) {
-        [targets addObject:[target convertToDictionaryIncludingLines:includeLines]];
+    for (NSObject *target in [self performSelector:@selector(codeCoverageTargets)]) {
+        [targets addObject:[target IDESchemeActionCodeCoverageTarget_convertToDictionaryIncludingLines:includeLines]];
     }
     
     return @{@"targets": targets};

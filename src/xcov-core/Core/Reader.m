@@ -3,8 +3,8 @@
 //  Copyright © 2016 nakioStudio. All rights reserved.
 //
 
+#include  <dlfcn.h>
 #import "IDESchemeActionCodeCoverage+Report.h"
-
 #import "DDCliUtil.h"
 #import "Reader.h"
 
@@ -36,8 +36,13 @@
         exit(66);
     }
     
+    if (dlopen(self.options.ideFoundationPath.UTF8String, RTLD_LAZY) == NULL) {
+        ddprintf(@"IDEFoundation could not be loaded\n");
+        exit(66);
+    }
+    
     ddprintf(@"Opening .xccoverage file at path: %@\n", self.options.source);
-    IDESchemeActionCodeCoverage *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.options.source];
+    NSObject *coverage = [NSKeyedUnarchiver unarchiveObjectWithFile:self.options.source];
     if (coverage == nil) {
         ddprintf(@"Unable to read .xccoverage file\n");
         exit(65);
@@ -45,7 +50,7 @@
     
     ddprintf(@"Parsing .xccoverage file...\n");
     BOOL includeLines = self.options.includeLinesInfo;
-    NSDictionary *report = [coverage convertToDictionaryIncludingLines:includeLines];
+    NSDictionary *report = [coverage IDESchemeActionCodeCoverage_convertToDictionaryIncludingLines:includeLines];
     if (report == nil) {
         ddprintf(@"Unable to parse .xccoverage file\n");
         exit(65);
