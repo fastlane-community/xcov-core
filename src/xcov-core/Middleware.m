@@ -16,8 +16,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
 
 - (int)application:(DDCliApplication *)app runWithArguments:(NSArray *)arguments {
     
-    ddprintf(@"------ %@ ------\n", MiddlewareAppName);
-    
     if (_help) {
         [self _printHelp];
         return EXIT_SUCCESS;
