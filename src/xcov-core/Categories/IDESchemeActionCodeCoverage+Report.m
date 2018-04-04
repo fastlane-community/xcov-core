@@ -8,11 +8,11 @@
 
 @implementation NSObject (IDESchemeActionCodeCoverage)
 
-- (NSDictionary *)IDESchemeActionCodeCoverage_convertToDictionaryIncludingLines:(BOOL)includeLines {
+- (NSDictionary *)IDESchemeActionCodeCoverage_convertToDictionary {
     NSMutableArray *targets = [NSMutableArray array];
     
     for (NSObject *target in [self performSelector:@selector(codeCoverageTargets)]) {
-        [targets addObject:[target IDESchemeActionCodeCoverageTarget_convertToDictionaryIncludingLines:includeLines]];
+        [targets addObject:[target IDESchemeActionCodeCoverageTarget_convertToDictionary]];
     }
     
     return @{@"targets": targets};

@@ -20,15 +20,4 @@
     return [NSArray arrayWithArray:functions];
 }
 
-- (NSArray *)IDESchemeActionCodeCoverageFile_convertLinesToDictionaries {
-    NSUInteger capacity = [[self performSelector:@selector(lines)] count];
-    NSMutableArray *dictionaries = [[NSMutableArray alloc] initWithCapacity:capacity];
-    
-    for (NSObject *line in [self performSelector:@selector(lines)]) {
-        [dictionaries addObject:[line DVTSourceFileLineCoverageData_convertToDictionary]];
-    }
-    
-    return [NSArray arrayWithArray:dictionaries];
-}
-
 @end

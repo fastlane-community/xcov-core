@@ -7,7 +7,7 @@
 #import "DDCliApplication.h"
 #import "Core.h"
 
-NSString *const MiddlewareAppVersion    = @"0.5";
+NSString *const MiddlewareAppVersion    = @"0.6";
 NSString *const MiddlewareAppName       = @"xcov-core";
 
 @implementation Middleware
@@ -15,8 +15,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
 #pragma mark - DDCliApplicationDelegate methods
 
 - (int)application:(DDCliApplication *)app runWithArguments:(NSArray *)arguments {
-    
-    ddprintf(@"------ %@ ------\n", MiddlewareAppName);
     
     if (_help) {
         [self _printHelp];
@@ -42,7 +40,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
         {@"source",             's',    DDGetoptRequiredArgument},
         {@"output",             'o',    DDGetoptRequiredArgument},
         {@"ide-foundation-path",'x',    DDGetoptRequiredArgument},
-        {@"include-lines-info",   0,    DDGetoptNoArgument},
         {@"help",               'h',    DDGetoptNoArgument},
         {@"version",            'v',    DDGetoptNoArgument},
         {nil,                     0,    0},
@@ -58,7 +55,6 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     options.source = [self convertToAbsolutePath:_source];
     options.target = [self convertToAbsolutePath:_output];
     options.ideFoundationPath = [self convertToAbsolutePath:_ideFoundationPath];
-    options.includeLinesInfo = _includeLinesInfo;
     Core *core = [[Core alloc] initWithOptions:options];
     [core run];
 }
@@ -72,7 +68,7 @@ NSString *const MiddlewareAppName       = @"xcov-core";
     ddprintf(@"\n"
              @"  -s, --source FILE             Full path to the .xccoverage file\n"
              @"  -o, --output FILE             Full path to the resulting .json file\n"
-             @"      --include-lines-info      Include full info about lines and ranges\n"
+             @"  -x, --ide-foundation-path     Full path to IDEFoundation.framework\n"
              @"  -v  --version                 Display version\n"
              @"  -h, --help                    Display this help\n"
              @"\n"

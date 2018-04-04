@@ -7,6 +7,6 @@
 
 @interface NSObject (IDESchemeActionCodeCoverageTarget)
 
-- (NSDictionary *)IDESchemeActionCodeCoverageTarget_convertToDictionaryIncludingLines:(BOOL)includeLines;
+- (NSDictionary *)IDESchemeActionCodeCoverageTarget_convertToDictionary;
 
 @end

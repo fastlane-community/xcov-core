@@ -8,6 +8,5 @@
 @interface NSObject (IDESchemeActionCodeCoverageFile)
 
 - (NSArray *)IDESchemeActionCodeCoverageFile_convertFunctionsToDictionaries;
-- (NSArray *)IDESchemeActionCodeCoverageFile_convertLinesToDictionaries;
 
 @end
