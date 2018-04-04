@@ -11,13 +11,13 @@ Simply run `xcov-core` supplying the path to your `.xccoverage` file and the pat
 to the **json** output file that will contain the resulting coverage report.
 
 ```
-$ xcov-core -s build/EasyPeasy.xccoverage -o report.json
+$ xcov-core -s build/EasyPeasy.xccoverage -o report.json -x /Applications/Xcode.app/Contents/Frameworks/IDEFoundation.framework/IDEFoundation
 ```
 
 ### Parameters allowed
 * `--source` `-s`: Path to the `.xccoverage` file.
 * `--output` `-o`: Path to the resulting `.json` file.
-* `--include-lines-info`: Include full info about lines and ranges.
+* `--ide-foundation-path` `-x`: Full path to IDEFoundation binary.
 * `--version` `-v`: Display version.
 * `--help` `-h`: Display this help.
 
