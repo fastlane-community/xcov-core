@@ -9,5 +9,4 @@ typedef struct {
     __unsafe_unretained NSString *source;
     __unsafe_unretained NSString *target;
     __unsafe_unretained NSString *ideFoundationPath;
-    BOOL includeLinesInfo;
 } CoreOptions;

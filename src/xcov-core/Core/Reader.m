@@ -49,8 +49,7 @@
     }
     
     ddprintf(@"Parsing .xccoverage file...\n");
-    BOOL includeLines = self.options.includeLinesInfo;
-    NSDictionary *report = [coverage IDESchemeActionCodeCoverage_convertToDictionaryIncludingLines:includeLines];
+    NSDictionary *report = [coverage IDESchemeActionCodeCoverage_convertToDictionary];
     if (report == nil) {
         ddprintf(@"Unable to parse .xccoverage file\n");
         exit(65);

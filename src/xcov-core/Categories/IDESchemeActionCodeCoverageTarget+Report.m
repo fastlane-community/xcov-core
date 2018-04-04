@@ -8,11 +8,11 @@
 
 @implementation NSObject (IDESchemeActionCodeCoverageTarget)
 
-- (NSDictionary *)IDESchemeActionCodeCoverageTarget_convertToDictionaryIncludingLines:(BOOL)includeLines {
+- (NSDictionary *)IDESchemeActionCodeCoverageTarget_convertToDictionary {
     NSMutableArray *files = [NSMutableArray array];
     
     for (NSObject *file in [self performSelector:@selector(sourceFiles)]) {
-        NSDictionary *fileDictionary = [self dictionaryFromCodeCoverageFile:file includeLines:includeLines];
+        NSDictionary *fileDictionary = [self dictionaryFromCodeCoverageFile:file];
         [files addObject:fileDictionary];
     }
     
@@ -23,19 +23,14 @@
 
 #pragma mark - Private methods
 
-- (NSDictionary *)dictionaryFromCodeCoverageFile:(NSObject *)file
-                                    includeLines:(BOOL)includeLines {
+- (NSDictionary *)dictionaryFromCodeCoverageFile:(NSObject *)file {
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     
     dictionary[@"name"] = [file performSelector:@selector(name)];
     dictionary[@"coverage"] = [file performSelector:@selector(lineCoverage)];
     dictionary[@"functions"] = [file IDESchemeActionCodeCoverageFile_convertFunctionsToDictionaries];
     dictionary[@"location"] = [file performSelector:@selector(documentLocation)];
-    
-    if (includeLines) {
-        dictionary[@"lines"] = [file IDESchemeActionCodeCoverageFile_convertLinesToDictionaries];
-    }
-    
+
     return dictionary;
 }
 
