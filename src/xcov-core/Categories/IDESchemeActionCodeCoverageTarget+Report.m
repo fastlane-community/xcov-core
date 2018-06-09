@@ -16,8 +16,12 @@
         [files addObject:fileDictionary];
     }
     
+    NSInteger const coveredLines = (NSInteger)[self performSelector:@selector(coveredLines)];
+    NSInteger const executableLines = (NSInteger)[self performSelector:@selector(executableLines)];
+    double const lineCoverage = executableLines == 0.f ? 0.f : (double)coveredLines / (double)executableLines;
+    
     return @{@"name": [self performSelector:@selector(name)],
-             @"coverage": [self performSelector:@selector(lineCoverage)],
+             @"coverage": @(lineCoverage),
              @"files": files};
 }
 
