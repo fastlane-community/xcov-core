@@ -51,10 +51,16 @@ NSString *const MiddlewareAppName       = @"xcov-core";
 #pragma mark - Private methods
 
 - (void)_runCore {
+    
+    NSString *source = [self convertToAbsolutePath:_source];
+    NSString *target = [self convertToAbsolutePath:_output];
+    NSString *ideFoundationPath = [self convertToAbsolutePath:_ideFoundationPath];
+
     CoreOptions options;
-    options.source = [self convertToAbsolutePath:_source];
-    options.target = [self convertToAbsolutePath:_output];
-    options.ideFoundationPath = [self convertToAbsolutePath:_ideFoundationPath];
+    options.source = source;
+    options.target = target;
+    options.ideFoundationPath = ideFoundationPath;
+
     Core *core = [[Core alloc] initWithOptions:options];
     [core run];
 }
