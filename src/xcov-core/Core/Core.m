@@ -9,7 +9,7 @@
 
 @interface Core()
 
-@property (nonatomic, assign, readonly) CoreOptions options;
+@property (nonatomic, assign, readonly) CoreOptions *options;
 
 @property (nonatomic, strong, readonly) Reader *reader;
 @property (nonatomic, strong, readonly) Writer *writer;
@@ -21,7 +21,7 @@
 @synthesize reader = _reader;
 @synthesize writer = _writer;
 
-- (instancetype)initWithOptions:(CoreOptions)options {
+- (instancetype)initWithOptions:(CoreOptions *)options {
     self = [super init];
 
     if (self != nil) {

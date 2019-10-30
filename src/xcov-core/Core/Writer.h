@@ -8,7 +8,7 @@
 
 @interface Writer : NSObject
 
-- (instancetype)initWithOptions:(CoreOptions)options;
+- (instancetype)initWithOptions:(CoreOptions *)options;
 - (void)writeReport:(NSDictionary*)report;
 
 @end

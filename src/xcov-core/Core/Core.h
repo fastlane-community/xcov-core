@@ -8,7 +8,7 @@
 
 @interface Core : NSObject
 
-- (instancetype)initWithOptions:(CoreOptions)options;
+- (instancetype)initWithOptions:(CoreOptions *)options;
 - (void)run;
 
 @end

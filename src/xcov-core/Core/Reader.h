@@ -8,7 +8,7 @@
 
 @interface Reader : NSObject
 
-- (instancetype)initWithOptions:(CoreOptions)options;
+- (instancetype)initWithOptions:(CoreOptions *)options;
 - (NSDictionary *)read;
 
 @end

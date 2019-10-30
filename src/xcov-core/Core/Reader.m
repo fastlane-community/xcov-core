@@ -10,14 +10,14 @@
 
 @interface Reader()
 
-@property (nonatomic, assign, readonly) CoreOptions options;
+@property (nonatomic, strong, readonly) CoreOptions *options;
 @property (nonatomic, strong, readonly) NSFileManager *fileManager;
 
 @end
 
 @implementation Reader
 
-- (instancetype)initWithOptions:(CoreOptions)options {
+- (instancetype)initWithOptions:(CoreOptions *)options {
     self = [super init];
     
     if (self != nil) {
