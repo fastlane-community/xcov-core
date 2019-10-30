@@ -5,8 +5,10 @@
 
 #import<Foundation/Foundation.h>
 
-typedef struct {
-    __unsafe_unretained NSString *source;
-    __unsafe_unretained NSString *target;
-    __unsafe_unretained NSString *ideFoundationPath;
-} CoreOptions;
+@interface CoreOptions : NSObject
+
+@property(nonatomic, strong) NSString *source;
+@property(nonatomic, strong) NSString *target;
+@property(nonatomic, strong) NSString *ideFoundationPath;
+
+@end

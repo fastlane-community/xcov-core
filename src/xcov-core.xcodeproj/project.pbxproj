@@ -20,6 +20,7 @@
 		C1E618121C56326900FB32CE /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6180D1C56326900FB32CE /* Core.m */; };
 		C1E618131C56326900FB32CE /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6180F1C56326900FB32CE /* Reader.m */; };
 		C1E618141C56326900FB32CE /* Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E618111C56326900FB32CE /* Writer.m */; };
+		F33D18D223691B950038B564 /* CoreOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D18D123691B950038B564 /* CoreOptions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,7 @@
 		C1E6180F1C56326900FB32CE /* Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reader.m; sourceTree = "<group>"; };
 		C1E618101C56326900FB32CE /* Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Writer.h; sourceTree = "<group>"; };
 		C1E618111C56326900FB32CE /* Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Writer.m; sourceTree = "<group>"; };
+		F33D18D123691B950038B564 /* CoreOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreOptions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C1234B151D303B96004AB3A1 /* CoreOptions.h */,
+				F33D18D123691B950038B564 /* CoreOptions.m */,
 				C1E6180C1C56326900FB32CE /* Core.h */,
 				C1E6180D1C56326900FB32CE /* Core.m */,
 				C1E6180E1C56326900FB32CE /* Reader.h */,
@@ -224,6 +227,7 @@
 				072F06D81C5639E9004DAE1A /* DDGetoptLongParser.m in Sources */,
 				072F06D71C5639E9004DAE1A /* DDCliUtil.m in Sources */,
 				C1E617EB1C5631D900FB32CE /* main.m in Sources */,
+				F33D18D223691B950038B564 /* CoreOptions.m in Sources */,
 				A381D1B91E166A34002A644A /* DVTSourceFileLineCoverageData+Report.m in Sources */,
 				072F06D61C5639E9004DAE1A /* DDCliParseException.m in Sources */,
 				A341BF2A1DD7BABA002F5084 /* IDESchemeActionCodeCoverageFile+Report.m in Sources */,
