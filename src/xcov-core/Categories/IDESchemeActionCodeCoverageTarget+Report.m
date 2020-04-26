@@ -16,8 +16,8 @@
         [files addObject:fileDictionary];
     }
     
-    NSInteger const coveredLines = (NSInteger)[self performSelector:@selector(coveredLines)];
-    NSInteger const executableLines = (NSInteger)[self performSelector:@selector(executableLines)];
+    NSInteger const coveredLines = (NSUInteger)[self performSelector:@selector(coveredLines)];
+    NSInteger const executableLines = (NSUInteger)[self performSelector:@selector(executableLines)];
     double const lineCoverage = executableLines == 0.f ? 0.f : (double)coveredLines / (double)executableLines;
     
     return @{@"name": [self performSelector:@selector(name)],
@@ -32,6 +32,8 @@
     
     dictionary[@"name"] = [file performSelector:@selector(name)];
     dictionary[@"coverage"] = [file performSelector:@selector(lineCoverage)];
+    dictionary[@"coveredLines"] = @((NSUInteger)[file performSelector:@selector(coveredLines)]);
+    dictionary[@"executableLines"] = @((NSUInteger)[file performSelector:@selector(executableLines)]);
     dictionary[@"functions"] = [file IDESchemeActionCodeCoverageFile_convertFunctionsToDictionaries];
     dictionary[@"location"] = [file performSelector:@selector(documentLocation)];
 
