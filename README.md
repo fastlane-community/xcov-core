@@ -1,6 +1,5 @@
-![logo](http://www.nakiostudio.com/xcov-logo.png)
+![logo](./.github/assets/logo.png)
 -------
-[![Twitter: @nakiostudio](https://img.shields.io/badge/contact-@nakiostudio-blue.svg?style=flat)](https://twitter.com/nakiostudio)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/nakiostudio/xcov/blob/master/LICENSE)
 
 **xcov-core** is a command line tool that parses Xcode `.xccoverage` files.
