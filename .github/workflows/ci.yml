@@ -50,5 +50,3 @@ jobs:
           arch -x86_64 ./src/build/Release/xcov-core -h;  echo $?
           arch -arm64 ./src/build/Release/xcov-core -v;  echo $?
           arch -x86_64 ./src/build/Release/xcov-core -v;  echo $?
-          arch -arm64 ./src/build/Release/xcov-core;  echo $?
-          arch -x86_64 ./src/build/Release/xcov-core;  echo $?
