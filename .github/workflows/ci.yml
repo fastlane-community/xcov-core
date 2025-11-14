@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    name: Build and verify xcov-core
+    runs-on: macos-26
+    strategy:
+      matrix:
+        xcode:
+          - "16.4"
+          - "26.0.1"
+          - "26.1"
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Select latest stable Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: ${{ matrix.xcode }}
+
+      - name: Show Xcode version
+        run: |
+          xcodebuild -version
+          xcode-select -p
+
+      - name: Build (Release)
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project src/xcov-core.xcodeproj \
+            -target xcov-core \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CONFIGURATION_BUILD_DIR=build/Release \
+            clean build
+
+      - name: Verify the built binary runs
+        run: |
+          set -euo pipefail
+          file build/Release/xcov-core || true
+          chmod +x build/Release/xcov-core || true
+          arch -arm64 ./src/build/Release/xcov-core -h;  echo $?
+          arch -x86_64 ./src/build/Release/xcov-core -h;  echo $?
+          arch -arm64 ./src/build/Release/xcov-core -v;  echo $?
+          arch -x86_64 ./src/build/Release/xcov-core -v;  echo $?
+          arch -arm64 ./src/build/Release/xcov-core;  echo $?
+          arch -x86_64 ./src/build/Release/xcov-core;  echo $?
