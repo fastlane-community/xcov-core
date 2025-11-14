@@ -72,11 +72,11 @@ NSString *const MiddlewareAppName       = @"xcov-core";
              @"  -v  --version                 Display version\n"
              @"  -h, --help                    Display this help\n"
              @"\n"
-             @"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
+             @"%@ v%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
 }
 
 - (void)_printVersion {
-    ddprintf(@"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
+    ddprintf(@"%@ v%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
 }
 
 - (NSString *)convertToAbsolutePath:(NSString *)path {
