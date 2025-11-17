@@ -7,7 +7,7 @@
 #import "DDCliApplication.h"
 #import "Core.h"
 
-NSString *const MiddlewareAppVersion    = @"0.7";
+NSString *const MiddlewareAppVersion    = @"0.8";
 NSString *const MiddlewareAppName       = @"xcov-core";
 
 @implementation Middleware
@@ -72,11 +72,11 @@ NSString *const MiddlewareAppName       = @"xcov-core";
              @"  -v  --version                 Display version\n"
              @"  -h, --help                    Display this help\n"
              @"\n"
-             @"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
+             @"%@ v%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
 }
 
 - (void)_printVersion {
-    ddprintf(@"%@ v.%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
+    ddprintf(@"%@ v%@ - Created by Carlos Vidal (@carlostify)\n", MiddlewareAppName, MiddlewareAppVersion);
 }
 
 - (NSString *)convertToAbsolutePath:(NSString *)path {

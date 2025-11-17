@@ -161,8 +161,8 @@
                                 command: (NSString *) command;
 {
     NSUInteger argc = [arguments count];
-    char ** argv = alloca(sizeof(char *) * argc);
-    int i;
+    char ** argv = alloca(sizeof(char *) * ( argc + 1 ) );
+    NSUInteger i;
     for (i = 0; i < argc; i++)
     {
         NSString * argument = [arguments objectAtIndex: i];
