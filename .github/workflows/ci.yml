@@ -13,9 +13,7 @@ jobs:
     strategy:
       matrix:
         xcode:
-          - "16.4"
-          - "26.0.1"
-          - "26.1"
+          - "26"
 
     steps:
       - uses: actions/checkout@v5
