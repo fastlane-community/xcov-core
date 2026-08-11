@@ -13,9 +13,7 @@ jobs:
     strategy:
       matrix:
         xcode:
-          - "16.4"
-          - "26.0.1"
-          - "26.1"
+          - "26"
 
     steps:
       - uses: actions/checkout@v5
@@ -44,8 +42,8 @@ jobs:
       - name: Verify the built binary runs
         run: |
           set -euo pipefail
-          file build/Release/xcov-core || true
-          chmod +x build/Release/xcov-core || true
+          file ./src/build/Release/xcov-core || true
+          chmod +x ./src/build/Release/xcov-core || true
           arch -arm64 ./src/build/Release/xcov-core -h;  echo $?
           arch -x86_64 ./src/build/Release/xcov-core -h;  echo $?
           arch -arm64 ./src/build/Release/xcov-core -v;  echo $?
